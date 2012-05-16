@@ -11,4 +11,4 @@ Add more items to Add-on Manager context menu.
 ## Supports
 
 * [Forum](https://forums.mozilla.org/addons/viewtopic.php?t=9858)
-* [Report issue](issues)
+* [Report issue](/LouCypher/AM_contextmenu/issues)
