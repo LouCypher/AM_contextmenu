@@ -6,9 +6,9 @@ Add more items to Add-on Manager context menu.
 
 ## Installation
 
-* [Latest version](https://addons.mozilla.org/addon/am-context/)
+* [Latest release](https://addons.mozilla.org/addon/am-context/)
 
 ## Supports
 
 * [Forum](https://forums.mozilla.org/addons/viewtopic.php?t=9858)
-* [Report issue](issues)
+* [Report a bug or request a feature](/LouCypher/AM_contextmenu/issues/new)
