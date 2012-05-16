@@ -1,0 +1,10 @@
+<!ENTITY AMcontext.inspectAddon         "Inspeksi Pengaya">
+<!ENTITY AMcontext.browseDir            "Buka Direktori Pengaya">
+<!ENTITY AMcontext.copyName             "Salin Nama Pengaya">
+<!ENTITY AMcontext.copyVersion          "Salin Versi Pengaya">
+<!ENTITY AMcontext.copyNameVersion      "Salin Nama &amp; Versi Pengaya">
+<!ENTITY AMcontext.copyId               "Salin ID Pengaya">
+<!ENTITY AMcontext.copyHomePageURL      "Salin Lokasi Beranda Pengaya">
+<!ENTITY AMcontext.visitHomePage        "Kunjungi Beranda Pengaya">
+<!ENTITY AMcontext.visitSupport         "Kunjungi Dukungan Pengaya">
+<!ENTITY AMcontext.reviews              "Ulasan Pengaya">

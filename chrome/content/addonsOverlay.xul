@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!--
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
+<!DOCTYPE overlay [
+<!ENTITY % addonsDTD SYSTEM "../locale/amcontext.dtd">
+%addonsDTD;
+<!ENTITY % extensionsDTD SYSTEM
+ "chrome://mozapps/locale/extensions/extensions.dtd">
+%extensionsDTD;
+]>
+
+<overlay id="addonsManager-overlay"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="amcontext.js"/>
+  <script type="application/javascript"
+          src="chrome://inspector/content/hooks.js"/>
+
+  <menupopup id="addonitem-popup">
+    <menuseparator id="AM-context-menuseparator-1"
+                   insertbefore="addonitem-menuseparator"/>
+
+    <menuitem
+      id="AM-context-inspect-addon"
+      insertafter="AM-context-menuseparator-1"
+      label="&AMcontext.inspectAddon;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.inspectAddon);"/>
+
+    <menuitem
+      id="AM-context-browse-dir"
+      insertafter="AM-context-inspect-addon"
+      label="&AMcontext.browseDir;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.browseDir);"/>
+
+    <menuseparator id="AM-context-menuseparator-2"
+                   insertafter="AM-context-browse-dir"/>
+
+    <menuitem
+      id="AM-context-copy-name"
+      insertafter="AM-context-menuseparator-2"
+      label="&AMcontext.copyName;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.copyName);"/>
+
+    <menuitem
+      id="AM-context-copy-version"
+      insertafter="AM-context-copy-name"
+      label="&AMcontext.copyVersion;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.copyVersion);"/>
+
+    <menuitem
+      id="AM-context-copy-nameversion"
+      insertafter="AM-context-copy-version"
+      label="&AMcontext.copyNameVersion;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.copyNameVersion);"/>
+
+    <menuitem
+      id="AM-context-copy-guid"
+      insertafter="AM-context-copy-nameversion"
+      label="&AMcontext.copyId;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.copyGUID);"/>
+
+    <menuitem
+      id="AM-context-copy-url"
+      insertafter="AM-context-copy-guid"
+      label="&AMcontext.copyHomePageURL;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.copyURL);"/>
+
+    <menuitem
+      id="AM-context-go-home"
+      insertafter="menuitem_about"
+      label="&AMcontext.visitHomePage;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.goHome);"/>
+
+    <menuitem
+      id="AM-context-go-support"
+      insertafter="AM-context-go-home"
+      label="&AMcontext.visitSupport;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.support);"/>
+
+    <menuitem
+      id="AM-context-reviews"
+      insertafter="AM-context-go-support"
+      label="&AMcontext.reviews;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.review);"/>
+
+    <menuitem
+      id="AM-context-donate"
+      insertafter="AM-context-reviews"
+      label="&cmd.contribute.label;"
+      command="cmd_contribute"/>
+
+  </menupopup>
+
+</overlay>

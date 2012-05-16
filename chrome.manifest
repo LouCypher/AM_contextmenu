@@ -1,0 +1,5 @@
+content   amcontextmenu               chrome/content/
+locale    amcontextmenu   en-US       chrome/locale/en-US/
+locale    amcontextmenu   id          chrome/locale/id/
+overlay   about:addons                                                  chrome://amcontextmenu/content/addonsOverlay.xul
+overlay   chrome://mozapps/content/extensions/extensions.xul            chrome://amcontextmenu/content/addonsOverlay.xul

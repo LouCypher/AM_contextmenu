@@ -1,0 +1,10 @@
+<!ENTITY AMcontext.inspectAddon         "Inspect Add-on">
+<!ENTITY AMcontext.browseDir            "Browse Install Directory">
+<!ENTITY AMcontext.copyName             "Copy Add-on Name">
+<!ENTITY AMcontext.copyVersion          "Copy Add-on Version">
+<!ENTITY AMcontext.copyNameVersion      "Copy Add-on Name &amp; Version">
+<!ENTITY AMcontext.copyId               "Copy Add-on Id">
+<!ENTITY AMcontext.copyHomePageURL      "Copy Home Page URL">
+<!ENTITY AMcontext.visitHomePage        "Visit Home Page">
+<!ENTITY AMcontext.visitSupport         "Visit Add-on Support">
+<!ENTITY AMcontext.reviews              "Add-on Reviews">
