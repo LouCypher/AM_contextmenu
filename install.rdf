@@ -6,12 +6,14 @@
     <em:type>2</em:type>
     <em:unpack>true</em:unpack>
     <em:name>Add-on Manager Context Menu</em:name>
-    <em:version>0.1a2012051002</em:version>
+    <em:version>0.1a2012051601</em:version>
     <em:description>
       Add more items to Add-on Manager context menu.
     </em:description>
     <em:creator>LouCypher</em:creator>
-    <em:homepageURL>http://loucypher.googlecode.com/</em:homepageURL>
+    <em:homepageURL>
+      https://github.com/LouCypher/AM_contextmenu
+    </em:homepageURL>
     <em:localized>
       <Description>
         <em:locale>en-US</em:locale>
