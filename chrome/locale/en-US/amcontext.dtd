@@ -6,5 +6,6 @@
 <!ENTITY AMcontext.copyId               "Copy Add-on Id">
 <!ENTITY AMcontext.copyHomePageURL      "Copy Home Page URL">
 <!ENTITY AMcontext.visitHomePage        "Visit Home Page">
+<!ENTITY AMcontext.visitAMOPage         "Visit Mozilla Add-ons Page">
 <!ENTITY AMcontext.visitSupport         "Visit Add-on Support">
 <!ENTITY AMcontext.reviews              "Add-on Reviews">
