@@ -50,7 +50,7 @@ var AM_Context = {
     AM_Context.copyToClipboard(aAddon.name + " " + aAddon.version);
   },
 
-  copyGUID: function AM_context_copyGUID(aAddon) {
+  copyID: function AM_context_copyUUID(aAddon) {
     AM_Context.copyToClipboard(aAddon.id);
   },
 
@@ -82,6 +82,11 @@ var AM_Context = {
       }
     }
     openURL(url);
+  },
+
+  goAMO: function AM_context_goAMO(aAddon) {
+    var amoURL = aAddon.reviewURL.replace(/\/reviews\//, "/");
+    openURL(amoURL);
   },
 
   review: function AM_context_review(aAddon) {
@@ -117,20 +122,27 @@ var AM_Context = {
     copyNameVersionItem.tooltipText = aAddon.name + " " + aAddon.version;
     copyNameVersionItem.disabled = isUserStyle;
 
-    var copyIdItem = AM_context_Item("copy-guid");
+    var copyIdItem = AM_context_Item("copy-id");
     copyIdItem.tooltipText = aAddon.id;
     copyIdItem.disabled = isUserStyle;
+
+    var amoURL = aAddon.reviewURL
+                 ? aAddon.reviewURL.replace(/\/reviews\//, "/")
+                 : null;
 
     var copyURLItem = AM_context_Item("copy-url");
     var goHomeItem = AM_context_Item("go-home");
     if (aAddon.homepageURL) {
       copyURLItem.tooltipText = goHomeItem.tooltipText = aAddon.homepageURL;
     } else if (aAddon.reviewURL) {
-      copyURLItem.tooltipText =  goHomeItem.tooltipText =
-        aAddon.reviewURL.replace(/\/reviews\/.*$/, "/");
+      copyURLItem.tooltipText =  goHomeItem.tooltipText = amoURL;
     }
     copyURLItem.disabled = goHomeItem.disabled =
       !(aAddon.homepageURL || aAddon.reviewURL);
+
+    var amoItem = AM_context_Item("go-amo");
+    amoItem.disabled = !amoURL || (aAddon.homepageURL == amoURL);
+    amoItem.tooltipText = amoURL;
 
     var supportItem = AM_context_Item("go-support");
     supportItem.disabled = !aAddon.supportURL;

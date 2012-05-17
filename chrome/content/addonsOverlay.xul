@@ -63,11 +63,11 @@
  AM_Context.copyNameVersion);"/>
 
     <menuitem
-      id="AM-context-copy-guid"
+      id="AM-context-copy-id"
       insertafter="AM-context-copy-nameversion"
       label="&AMcontext.copyId;"
       oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
- AM_Context.copyGUID);"/>
+ AM_Context.copyID);"/>
 
     <menuitem
       id="AM-context-copy-url"
@@ -84,8 +84,15 @@
  AM_Context.goHome);"/>
 
     <menuitem
-      id="AM-context-go-support"
+      id="AM-context-go-amo"
       insertafter="AM-context-go-home"
+      label="&AMcontext.visitAMOPage;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.goAMO);"/>
+
+    <menuitem
+      id="AM-context-go-support"
+      insertafter="AM-context-go-amo"
       label="&AMcontext.visitSupport;"
       oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
  AM_Context.support);"/>
