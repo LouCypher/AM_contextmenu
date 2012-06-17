@@ -7,7 +7,7 @@ Add more items to Add-on Manager context menu.
 ## Installation
 
 * [Latest release](https://addons.mozilla.org/addon/am-context/?src=external-home)
-* [Latest build](https://github.com/downloads/LouCypher/AM_contextmenu/amcontextmenu.xpi)
+* [Latest builds](https://github.com/LouCypher/AM_contextmenu/downloads)
 
 ## Supports
 
