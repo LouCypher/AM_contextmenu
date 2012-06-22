@@ -14,4 +14,4 @@ Add more items to Add-on Manager context menu.
 * [Forum](https://forums.mozilla.org/addons/viewtopic.php?t=9858)
 * [Report a bug or request a feature](/LouCypher/AM_contextmenu/issues/new)
 
-[![Flattr this](http://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/4ca3a64aabad19229033e433c17ad799)
+[![Flattr this](//api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/4ca3a64aabad19229033e433c17ad799)
