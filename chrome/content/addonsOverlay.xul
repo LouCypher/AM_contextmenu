@@ -71,7 +71,7 @@
 
     <menuitem
       id="AM-context-copy-url"
-      insertafter="AM-context-copy-guid"
+      insertafter="AM-context-copy-id"
       label="&AMcontext.copyHomePageURL;"
       oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
  AM_Context.copyURL);"/>
