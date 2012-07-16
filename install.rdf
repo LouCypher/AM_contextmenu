@@ -7,30 +7,21 @@
     <!--em:unpack>true</em:unpack-->
     <em:name>Add-on Manager Context Menu</em:name>
     <em:version>0.1</em:version>
-    <em:description>
-      Add more items to Add-on Manager context menu.
-    </em:description>
+    <em:description>Add more items to Add-on Manager context menu.</em:description>
     <em:creator>LouCypher</em:creator>
-    <em:homepageURL>
-      https://github.com/LouCypher/AM_contextmenu
-    </em:homepageURL>
+    <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
     <em:localized>
       <Description>
         <em:locale>en-US</em:locale>
         <em:name>Add-on Manager Context Menu</em:name>
-        <em:description>
-          Add more items to Add-on Manager context menu.
-        </em:description>
+        <em:description>Add more items to Add-on Manager context menu.</em:description>
       </Description>
     </em:localized>
     <em:localized>
       <Description>
         <em:locale>id</em:locale>
         <em:name>Menu Konteks untuk Pengelola Pengaya</em:name>
-        <em:description>
-          Menambahkan lebih banyak menuitem pada menu konteks
-          di Pengelola Pengaya.
-        </em:description>
+        <em:description>Menambahkan lebih banyak menuitem pada menu konteks di Pengelola Pengaya.</em:description>
       </Description>
     </em:localized>
     <em:targetApplication>
