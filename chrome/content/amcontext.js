@@ -62,9 +62,25 @@ var AM_Context = {
     var dir = Services.dirsvc.get("ProfD", Ci.nsIFile);
     dir.append("extensions");
     dir.append(aAddon.id);
+    var fileOrDir = dir.path + (dir.exists() ? "" : ".xpi");
+    //Application.console.log(fileOrDir);
     var nsLocalFile = Components.Constructor("@mozilla.org/file/local;1",
                                              "nsILocalFile", "initWithPath");
-    (new nsLocalFile(dir.path + (dir.exists() ? "" : ".xpi"))).reveal();
+    try {
+      (new nsLocalFile(fileOrDir)).reveal();
+    } catch(ex) {
+      var addonDir = /.xpi$/.test(fileOrDir) ? dir.parent : dir;
+      try {
+        if (addonDir.exists()) {
+          addonDir.launch();
+        }
+      } catch(ex) {
+        var uri = Services.io.newFileURI(addonDir);
+        var protSvc = Cc["@mozilla.org/uriloader/external-protocol-service;1"].
+                      getService(Ci.nsIExternalProtocolService);
+        protSvc.loadUrl(uri);
+      }
+    }
   },
 
   inspectAddon: function AM_context_inspectAddon(aAddon) {
