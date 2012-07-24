@@ -2,6 +2,12 @@
 
 [![Screenshot](https://lh4.googleusercontent.com/-EDIp4dgoEbk/T7D7No8hAgI/AAAAAAAACnE/S-ytNTrwKsY/s128/amcontext-0.0.20120510.02.png)](https://lh4.googleusercontent.com/-EDIp4dgoEbk/T7D7No8hAgI/AAAAAAAACnE/S-ytNTrwKsY/s640/amcontext-0.0.20120510.02.png "Click to enlarge")
 
+## Compatibility
+
+* [Firefox](https://affiliates.mozilla.org/link/banner/9337) 9.0 – 16.0a2
+* [SeaMonkey](http://www.seamonkey-project.org/) 2.6 – 11.*
+* [Thunderbird](https://affiliates.mozilla.org/link/banner/22063) 9.0 – 14.*
+
 ## Installation
 
 * [Latest release](https://addons.mozilla.org/addon/am-context/?src=external-home)
