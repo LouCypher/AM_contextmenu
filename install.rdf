@@ -5,16 +5,16 @@
     <em:id>amcontextmenu@loucypher</em:id>
     <em:type>2</em:type>
     <!--em:unpack>true</em:unpack-->
-    <em:name>Add-on Manager Context Menu</em:name>
+    <em:name>Add-ons Manager Context Menu</em:name>
     <em:version>0.2</em:version>
-    <em:description>Add more items to Add-on Manager context menu.</em:description>
+    <em:description>Add more items to Add-ons Manager context menu.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
     <em:localized>
       <Description>
         <em:locale>en-US</em:locale>
-        <em:name>Add-on Manager Context Menu</em:name>
-        <em:description>Add more items to Add-on Manager context menu.</em:description>
+        <em:name>Add-ons Manager Context Menu</em:name>
+        <em:description>Add more items to Add-ons Manager context menu.</em:description>
       </Description>
     </em:localized>
     <em:localized>
