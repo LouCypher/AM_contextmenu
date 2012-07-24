@@ -1,6 +1,6 @@
 ## Screenshot
 
-[![Screenshot](https://lh4.googleusercontent.com/-EDIp4dgoEbk/T7D7No8hAgI/AAAAAAAACnE/S-ytNTrwKsY/s128/amcontext-0.0.20120510.02.png)](https://lh4.googleusercontent.com/-EDIp4dgoEbk/T7D7No8hAgI/AAAAAAAACnE/S-ytNTrwKsY/s640/amcontext-0.0.20120510.02.png "Click to enlarge")
+[![Screenshot](https://lh5.googleusercontent.com/-NlwZbuDj8x4/UA777oswPlI/AAAAAAAACxE/vl-Ciz_Atx4/s128/amcontext.png)](https://lh5.googleusercontent.com/-NlwZbuDj8x4/UA777oswPlI/AAAAAAAACxE/vl-Ciz_Atx4/s800/amcontext.png "Click to enlarge")
 
 ## Compatibility
 
