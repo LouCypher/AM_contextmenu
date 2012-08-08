@@ -64,8 +64,11 @@ var AM_Context = {
     dir.append(aAddon.id);
     var fileOrDir = dir.path + (dir.exists() ? "" : ".xpi");
     //Application.console.log(fileOrDir);
+    var gecko = parseInt(Services.appinfo.platformVersion);
     var nsLocalFile = Components.Constructor("@mozilla.org/file/local;1",
-                                             "nsILocalFile", "initWithPath");
+                                             (gecko >= 14) ? "nsIFile"
+                                                           : "nsILocalFile",
+                                             "initWithPath");
     try {
       (new nsLocalFile(fileOrDir)).reveal();
     } catch(ex) {
