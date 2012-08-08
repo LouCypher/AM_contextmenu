@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<script type="application/javascript"><![CDATA[
+  (function() {
+    Components.utils.import("resource://gre/modules/Services.jsm");
+    var url = Services.urlFormatter.formatURL(
+                       Services.prefs.getCharPref(
+                       "extensions.amcontextmenu.contributionURL"));
+    if (!/(firefox|seamonkey|thunderbird)\/addon/.test(url)) {
+      url = url.replace(/\w+\/addon/, "firefox/addon");
+    }
+    location.replace(url);
+  })()
+]]></script>
+</head>
+<body></body>
+</html>
