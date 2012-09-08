@@ -5,6 +5,7 @@
 <!ENTITY AMcontext.copyNameVersion      "Copy Add-on Name &amp; Version">
 <!ENTITY AMcontext.copyId               "Copy Add-on Id">
 <!ENTITY AMcontext.copyHomePageURL      "Copy Home Page URL">
+<!ENTITY AMcontext.releaseNotes         "Release Notes">
 <!ENTITY AMcontext.visitHomePage        "Visit Home Page">
 <!ENTITY AMcontext.visitAMOPage         "Visit Mozilla Add-ons Page">
 <!ENTITY AMcontext.visitSupport         "Visit Add-on Support">

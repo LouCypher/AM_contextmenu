@@ -103,6 +103,10 @@ var AM_Context = {
     openURL(url);
   },
 
+  openReleaseNotes: function AM_context_releaseNotes(aAddon) {
+    openURL(aAddon.releaseNotesURI.spec);
+  },
+
   goAMO: function AM_context_goAMO(aAddon) {
     var amoURL = aAddon.reviewURL.replace(/\/reviews\//, "/");
     openURL(amoURL);
@@ -158,6 +162,9 @@ var AM_Context = {
     }
     copyURLItem.disabled = goHomeItem.disabled =
       !(aAddon.homepageURL || aAddon.reviewURL);
+
+    var notesItem = AM_context_Item("release-notes");
+    notesItem.disabled = !aAddon.releaseNotesURI;
 
     var amoItem = AM_context_Item("go-amo");
     amoItem.disabled = !amoURL || (aAddon.homepageURL == amoURL);

@@ -5,6 +5,7 @@
 <!ENTITY AMcontext.copyNameVersion      "Salin Nama &amp; Versi Pengaya">
 <!ENTITY AMcontext.copyId               "Salin ID Pengaya">
 <!ENTITY AMcontext.copyHomePageURL      "Salin Lokasi Beranda Pengaya">
+<!ENTITY AMcontext.releaseNotes         "Release Notes">
 <!ENTITY AMcontext.visitHomePage        "Kunjungi Beranda Pengaya">
 <!ENTITY AMcontext.visitAMOPage         "Kunjungi Laman Pengaya Mozilla">
 <!ENTITY AMcontext.visitSupport         "Kunjungi Dukungan Pengaya">
