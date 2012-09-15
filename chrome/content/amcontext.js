@@ -8,7 +8,13 @@ var AM_Context = {
 
   toString: function AM_context_name() {
     "use strict";
-    return "Add-ons Manager Context Menu";
+    try {
+      return Services.prefs.
+             getComplexValue("extensions.amcontextmenu@loucypher.name",
+                             Ci.nsIPrefLocalizedString).data;
+    } catch(ex) {
+      return "Add-ons Manager Context Menu";
+    }
   },
 
   getPopupNode: function AM_context_getPopupNode(aNode) {
@@ -211,5 +217,5 @@ var AM_Context = {
   }
 }
 
-window.addEventListener("load", AM_Context.onLoad, false);
-window.removeEventListener("unload", AM_Context.onLoad, false);
+addEventListener("load", AM_Context.onLoad, false);
+removeEventListener("unload", AM_Context.onLoad, false);
