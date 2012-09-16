@@ -1,6 +1,9 @@
 content   amcontextmenu               chrome/content/
 locale    amcontextmenu   en-US       chrome/locale/en-US/
 locale    amcontextmenu   id          chrome/locale/id/
+locale    amcontextmenu   ja          chrome/locale/ja/
+locale    amcontextmenu   sr          chrome/locale/sr/
+locale    amcontextmenu   zh-CN       chrome/locale/zh-CN/
 overlay   about:addons                                                  chrome://amcontextmenu/content/addonsOverlay.xul
 overlay   chrome://mozapps/content/extensions/extensions.xul            chrome://amcontextmenu/content/addonsOverlay.xul
 overlay   chrome://browser/content/browser.xul                          chrome://amcontextmenu/content/browserOverlay.xul

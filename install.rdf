@@ -10,20 +10,62 @@
     <em:description>Add more items to Add-ons Manager context menu.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
+
     <em:localized>
       <Description>
         <em:locale>en-US</em:locale>
         <em:name>Add-ons Manager Context Menu</em:name>
         <em:description>Add more items to Add-ons Manager context menu.</em:description>
+        <em:translator>Haebaru (ja)</em:translator>
+        <em:translator>ДакСРБИЈА (sr)</em:translator>
+        <em:translator>Wang.H.K (zh-CN)</em:translator>
       </Description>
     </em:localized>
+
     <em:localized>
       <Description>
         <em:locale>id</em:locale>
         <em:name>Menu Konteks untuk Pengelola Pengaya</em:name>
         <em:description>Menambahkan lebih banyak menuitem pada menu konteks di Pengelola Pengaya.</em:description>
+        <em:translator>Haebaru (ja)</em:translator>
+        <em:translator>ДакСРБИЈА (sr)</em:translator>
+        <em:translator>Wang.H.K (zh-CN)</em:translator>
       </Description>
     </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>ja</em:locale>
+        <em:name>Add-ons Manager Context Menu</em:name>
+        <em:description>アドオンマネージャのコンテキストメニューに項目を追加します。</em:description>
+        <em:translator>Haebaru (ja)</em:translator>
+        <em:translator>ДакСРБИЈА (sr)</em:translator>
+        <em:translator>Wang.H.K (zh-CN)</em:translator>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>sr</em:locale>
+        <em:name>Приручни мени у управљачу додацима</em:name>
+        <em:description>Додајте више ставки у приручни мени управљача додацима</em:description>
+        <em:translator>Haebaru (ja)</em:translator>
+        <em:translator>ДакСРБИЈА (sr)</em:translator>
+        <em:translator>Wang.H.K (zh-CN)</em:translator>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>zh-CN</em:locale>
+        <em:name>Add-ons Manager Context Menu</em:name>
+        <em:description>为附加组件管理器上下文菜单添加更多项目。</em:description>
+        <em:translator>Haebaru (ja)</em:translator>
+        <em:translator>ДакСРБИЈА (sr)</em:translator>
+        <em:translator>Wang.H.K (zh-CN)</em:translator>
+      </Description>
+    </em:localized>
+
     <em:targetApplication>
       <Description><!--Firefox-->
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
@@ -31,6 +73,7 @@
         <em:maxVersion>17.0a2</em:maxVersion>
       </Description>
     </em:targetApplication>
+
     <em:targetApplication>
       <Description><!-- SeaMonkey -->
         <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
@@ -38,6 +81,7 @@
         <em:maxVersion>2.12.*</em:maxVersion>
       </Description>
     </em:targetApplication>
+
     <em:targetApplication>
       <Description><!--Thunderbird-->
         <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
@@ -45,5 +89,6 @@
         <em:maxVersion>15.*</em:maxVersion>
       </Description>
     </em:targetApplication>
+
   </Description>
 </RDF>

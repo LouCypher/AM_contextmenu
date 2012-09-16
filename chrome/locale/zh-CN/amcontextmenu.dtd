@@ -1,0 +1,12 @@
+<!ENTITY AMcontext.inspectAddon "检查附加组件">
+<!ENTITY AMcontext.browseDir "查看安装目录">
+<!ENTITY AMcontext.copyName "复制附加组件名称">
+<!ENTITY AMcontext.copyVersion "复制附加组件版本">
+<!ENTITY AMcontext.copyNameVersion "复制附加组件名称&amp;版本">
+<!ENTITY AMcontext.copyId "复制附加组件 Id">
+<!ENTITY AMcontext.copyHomePageURL "复制主页 URL">
+<!ENTITY AMcontext.releaseNotes "发行说明">
+<!ENTITY AMcontext.visitHomePage "访问主页">
+<!ENTITY AMcontext.visitAMOPage "访问 Mozilla 附加组件页">
+<!ENTITY AMcontext.visitSupport "访问附加组件支持页">
+<!ENTITY AMcontext.reviews "附加组件评论">

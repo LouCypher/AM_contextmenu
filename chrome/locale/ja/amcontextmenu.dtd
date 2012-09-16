@@ -1,0 +1,12 @@
+<!ENTITY AMcontext.inspectAddon "アドオンの調査">
+<!ENTITY AMcontext.browseDir "インストールディレクトリを開く">
+<!ENTITY AMcontext.copyName "アドオン名をコピー">
+<!ENTITY AMcontext.copyVersion "アドオンバージョンをコピー">
+<!ENTITY AMcontext.copyNameVersion "アドオン名とバージョンをコピー">
+<!ENTITY AMcontext.copyId "アドオン Id をコピー">
+<!ENTITY AMcontext.copyHomePageURL "ホームページ URL をコピー">
+<!ENTITY AMcontext.releaseNotes "リリースノートを開く">
+<!ENTITY AMcontext.visitHomePage "ホームページを開く">
+<!ENTITY AMcontext.visitAMOPage "Mozilla Add-ons のページを開く">
+<!ENTITY AMcontext.visitSupport "アドオンのサポートページを開く">
+<!ENTITY AMcontext.reviews "アドオンのレビューページを開く">

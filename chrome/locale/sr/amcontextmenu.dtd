@@ -1,0 +1,12 @@
+<!ENTITY AMcontext.inspectAddon "Испитај додатак">
+<!ENTITY AMcontext.browseDir "Погледај директоријум инсталације">
+<!ENTITY AMcontext.copyName "Копирај назив додатка">
+<!ENTITY AMcontext.copyVersion "Копирај верзију додатка">
+<!ENTITY AMcontext.copyNameVersion "Копирај назив и верзију додатка">
+<!ENTITY AMcontext.copyId "Копирај ИД додатка">
+<!ENTITY AMcontext.copyHomePageURL "Копирај URL странице додатка">
+<!ENTITY AMcontext.releaseNotes "Белешка о издању">
+<!ENTITY AMcontext.visitHomePage "Посети матичну страницу">
+<!ENTITY AMcontext.visitAMOPage "Посети Мозилину страницу са додацима">
+<!ENTITY AMcontext.visitSupport "Посети подршку за додатак">
+<!ENTITY AMcontext.reviews "Оцене додатка">
