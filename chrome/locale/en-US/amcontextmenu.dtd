@@ -8,5 +8,7 @@
 <!ENTITY AMcontext.releaseNotes         "Release Notes">
 <!ENTITY AMcontext.visitHomePage        "Visit Home Page">
 <!ENTITY AMcontext.visitAMOPage         "Visit Mozilla Add-ons Page">
+<!ENTITY AMcontext.visitUSOPage         "View on Userscripts.org">
+<!ENTITY AMcontext.findOnUSO            "Find on Userscripts.org">
 <!ENTITY AMcontext.visitSupport         "Visit Add-on Support">
 <!ENTITY AMcontext.reviews              "Add-on Reviews">

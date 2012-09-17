@@ -117,6 +117,20 @@
       label="&cmd.contribute.label;"
       command="cmd_contribute"/>
 
+    <menuitem
+      id="AM-context-go-uso"
+      insertafter="menuitem_userscript_toggleCheckUpdates"
+      class="greasemonkey"
+      label="&AMcontext.visitUSOPage;"
+      oncommand="openURL(this.tooltipText);"/>
+
+    <menuitem
+      id="AM-context-find-uso"
+      insertafter="AM-context-go-uso"
+      class="greasemonkey"
+      label="&AMcontext.findOnUSO;"
+      oncommand="openURL(this.getAttribute('find-on-uso'));"/>
+
   </menupopup>
 
 </overlay>

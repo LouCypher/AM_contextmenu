@@ -8,5 +8,7 @@
 <!ENTITY AMcontext.releaseNotes "发行说明">
 <!ENTITY AMcontext.visitHomePage "访问主页">
 <!ENTITY AMcontext.visitAMOPage "访问 Mozilla 附加组件页">
+<!ENTITY AMcontext.visitUSOPage "View on Userscripts.org">
+<!ENTITY AMcontext.findOnUSO "Find on Userscripts.org">
 <!ENTITY AMcontext.visitSupport "访问附加组件支持页">
 <!ENTITY AMcontext.reviews "附加组件评论">

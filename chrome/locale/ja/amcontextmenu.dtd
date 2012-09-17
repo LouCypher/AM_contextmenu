@@ -8,5 +8,7 @@
 <!ENTITY AMcontext.releaseNotes "リリースノートを開く">
 <!ENTITY AMcontext.visitHomePage "ホームページを開く">
 <!ENTITY AMcontext.visitAMOPage "Mozilla Add-ons のページを開く">
+<!ENTITY AMcontext.visitUSOPage "View on Userscripts.org">
+<!ENTITY AMcontext.findOnUSO "Find on Userscripts.org">
 <!ENTITY AMcontext.visitSupport "アドオンのサポートページを開く">
 <!ENTITY AMcontext.reviews "アドオンのレビューページを開く">

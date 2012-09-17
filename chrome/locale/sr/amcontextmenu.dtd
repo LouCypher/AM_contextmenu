@@ -8,5 +8,7 @@
 <!ENTITY AMcontext.releaseNotes "Белешка о издању">
 <!ENTITY AMcontext.visitHomePage "Посети матичну страницу">
 <!ENTITY AMcontext.visitAMOPage "Посети Мозилину страницу са додацима">
+<!ENTITY AMcontext.visitUSOPage "View on Userscripts.org">
+<!ENTITY AMcontext.findOnUSO "Find on Userscripts.org">
 <!ENTITY AMcontext.visitSupport "Посети подршку за додатак">
 <!ENTITY AMcontext.reviews "Оцене додатка">

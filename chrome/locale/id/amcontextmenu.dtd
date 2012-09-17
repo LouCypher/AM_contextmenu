@@ -8,5 +8,7 @@
 <!ENTITY AMcontext.releaseNotes         "Release Notes">
 <!ENTITY AMcontext.visitHomePage        "Kunjungi Beranda Pengaya">
 <!ENTITY AMcontext.visitAMOPage         "Kunjungi Laman Pengaya Mozilla">
+<!ENTITY AMcontext.visitUSOPage         "Lihat di Userscripts.org">
+<!ENTITY AMcontext.findOnUSO            "Cari di Userscripts.org">
 <!ENTITY AMcontext.visitSupport         "Kunjungi Dukungan Pengaya">
 <!ENTITY AMcontext.reviews              "Ulasan Pengaya">

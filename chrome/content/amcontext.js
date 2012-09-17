@@ -176,6 +176,40 @@ var AM_Context = {
     amoItem.disabled = !amoURL || (aAddon.homepageURL == amoURL);
     amoItem.tooltipText = amoURL;
 
+    var usoRegx = /^https?:\/\/userscripts.org\/scripts\/source\/\d+.\w+.js$/;
+    var usoURL = "";
+    if (aAddon._script) {
+      var usDownloadURL = aAddon._script._downloadURL;
+      var usUpdateURL = aAddon._script._updateURL;
+      if (usoRegx.test(usDownloadURL)) {
+        usoURL = usDownloadURL;
+      } else if (usoRegx.test(usUpdateURL)) {
+        usoURL = usUpdateURL;
+      }
+    }
+
+    var usoItem = AM_context_Item("go-uso");
+    usoItem.disabled = !usoRegx.test(usoURL);
+    usoItem.className = isUserScript
+                        ? usoItem.disabled
+                          ? ""
+                          : "greasemonkey"
+                        : "";
+    usoItem.tooltipText = usoURL.replace(/source/, "show")
+                                .replace(/.\w+.js$/, "");
+
+    var fusoItem = AM_context_Item("find-uso");
+    fusoItem.hidden = true;
+    fusoItem.disabled = usoRegx.test(usoURL);
+    fusoItem.className = isUserScript
+                         ? fusoItem.disabled
+                           ? ""
+                           : "greasemonkey"
+                         : "";
+    fusoItem.setAttribute("find-on-uso",
+                          "http://userscripts.org/scripts/search?q=" +
+                          encodeURIComponent(aAddon.name));
+
     var supportItem = AM_context_Item("go-support");
     supportItem.disabled = !aAddon.supportURL;
     supportItem.tooltipText = aAddon.supportURL;
