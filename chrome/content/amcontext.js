@@ -102,8 +102,8 @@ var AM_Context = {
       if (aAddon.reviewURL) {
         url = aAddon.reviewURL.replace(/\/reviews\/.*$/, "/");
       } else {
-        alert("This addon has no homepage!");
-        return;
+        url = "https://addons.mozilla.org/search/?q="
+            + encodeURIComponent(aAddon.name);
       }
     }
     openURL(url);
@@ -173,7 +173,7 @@ var AM_Context = {
     notesItem.disabled = !aAddon.releaseNotesURI;
 
     var amoItem = AM_context_Item("go-amo");
-    amoItem.disabled = !amoURL || (aAddon.homepageURL == amoURL);
+    amoItem.disabled = !amoURL || /addons.mozilla.org/.test(aAddon.homepageURL);
     amoItem.tooltipText = amoURL;
 
     var usoRegx = /^https?:\/\/userscripts.org\/scripts\/source\/\d+.\w+.js$/;
