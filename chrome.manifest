@@ -1,4 +1,5 @@
 content   amcontextmenu               chrome/content/
+skin      amcontextmenu   classic/1.0 chrome/skin/classic/
 locale    amcontextmenu   en-US       chrome/locale/en-US/
 locale    amcontextmenu   id          chrome/locale/id/
 locale    amcontextmenu   ja          chrome/locale/ja/
@@ -7,3 +8,4 @@ locale    amcontextmenu   zh-CN       chrome/locale/zh-CN/
 overlay   about:addons                                                  chrome://amcontextmenu/content/addonsOverlay.xul
 overlay   chrome://mozapps/content/extensions/extensions.xul            chrome://amcontextmenu/content/addonsOverlay.xul
 overlay   chrome://browser/content/browser.xul                          chrome://amcontextmenu/content/browserOverlay.xul
+style     chrome://mozapps/content/extensions/about.xul                 chrome://amcontextmenu/skin/about.css
