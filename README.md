@@ -22,4 +22,4 @@
 
 * [Donate](https://addons.mozilla.org/addon/am-context/developers)
 * [Flattr](https://flattr.com/submit/auto?url=https%3A%2F%2Fgithub.com%2FLouCypher%2FAM_contextmenu)
-* [Translate](http://www.babelzilla.org/?option=com_wts&Itemid=0&type=show&extension=5652) (via BabelZilla)
+* [Translate](http://www.babelzilla.org/?option=com_wts&Itemid=0&type=show&extension=5652#tabs-2) (via BabelZilla)
