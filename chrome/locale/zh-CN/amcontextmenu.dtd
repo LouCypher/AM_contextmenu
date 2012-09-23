@@ -1,4 +1,5 @@
 <!ENTITY AMcontext.inspectAddon "检查附加组件">
+<!ENTITY AMcontext.inspectUserscript "Inspect User Script">
 <!ENTITY AMcontext.browseDir "查看安装目录">
 <!ENTITY AMcontext.copyName "复制附加组件名称">
 <!ENTITY AMcontext.copyVersion "复制附加组件版本">

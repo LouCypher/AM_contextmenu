@@ -96,6 +96,10 @@ var AM_Context = {
     inspectObject(aAddon);
   },
 
+  inspectUserscript: function AM_context_inspectUserscript(aAddon) {
+    inspectObject(aAddon._script);
+  },
+
   goHome: function AM_context_goHome(aAddon) {
     var url = aAddon.homepageURL;
     if (!url) {

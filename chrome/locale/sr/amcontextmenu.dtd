@@ -1,4 +1,5 @@
 <!ENTITY AMcontext.inspectAddon "Испитај додатак">
+<!ENTITY AMcontext.inspectUserscript "Inspect User Script">
 <!ENTITY AMcontext.browseDir "Погледај директоријум инсталације">
 <!ENTITY AMcontext.copyName "Копирај назив додатка">
 <!ENTITY AMcontext.copyVersion "Копирај верзију додатка">

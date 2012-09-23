@@ -32,8 +32,16 @@
  AM_Context.inspectAddon);"/>
 
     <menuitem
-      id="AM-context-browse-dir"
+      id="AM-context-inspect-userscript"
       insertafter="AM-context-inspect-addon"
+      class="greasemonkey"
+      label="&AMcontext.inspectUserscript;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.inspectUserscript);"/>
+
+    <menuitem
+      id="AM-context-browse-dir"
+      insertafter="AM-context-inspect-userscript"
       label="&AMcontext.browseDir;"
       oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
  AM_Context.browseDir);"/>
