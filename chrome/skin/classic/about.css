@@ -1,34 +1,43 @@
-/* About dialog */
-#genericAbout[title*="Приручни мени у управљачу додацима"],
-#genericAbout[title*="Menu Konteks untuk Pengelola Pengaya"],
-#genericAbout[title*="Add-ons Manager Context Menu"] {
+/*
+ *  This Source Code Form is subject to the terms of the Mozilla Public
+ *  License, v. 2.0. If a copy of the MPL was not distributed with this
+ *  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
+#genericAbout:-moz-any([title*="Add-ons Manager Context Menu"],
+                       [title*="Menu Konteks untuk Pengelola Pengaya"],
+                       [title*="Приручни мени у управљачу додацима"]) {
   min-height: 300px !important;
   width: 50em !important;
 }
-#genericAbout[title*="Приручни мени у управљачу додацима"] #extensionDetailsBox,
-#genericAbout[title*="Menu Konteks untuk Pengelola Pengaya"] #extensionDetailsBox,
-#genericAbout[title*="Add-ons Manager Context Menu"] #extensionDetailsBox {
+
+#genericAbout:-moz-any([title*="Add-ons Manager Context Menu"],
+                       [title*="Menu Konteks untuk Pengelola Pengaya"],
+                       [title*="Приручни мени у управљачу додацима"])
+ #extensionDetailsBox {
   min-height: 200px !important;
 }
-#genericAbout[title*="Приручни мени у управљачу додацима"] .text-link,
-#genericAbout[title*="Menu Konteks untuk Pengelola Pengaya"] .text-link,
-#genericAbout[title*="Add-ons Manager Context Menu"] .text-link {
+
+#genericAbout:-moz-any([title*="Add-ons Manager Context Menu"],
+                       [title*="Menu Konteks untuk Pengelola Pengaya"],
+                       [title*="Приручни мени у управљачу додацима"])
+ .text-link {
   border-width: 0 !important;
+  color: -moz-hyperlinktext !important;
 }
-#genericAbout[title*="Приручни мени у управљачу додацима"] #extensionDetailsBox .sectionTitle:not([hidden]) + .boxIndent,
-#genericAbout[title*="Menu Konteks untuk Pengelola Pengaya"] #extensionDetailsBox .sectionTitle:not([hidden]) + .boxIndent,
-#genericAbout[title*="Add-ons Manager Context Menu"] #extensionDetailsBox .sectionTitle:not([hidden]) + .boxIndent {
+
+#genericAbout:-moz-any([title*="Add-ons Manager Context Menu"],
+                       [title*="Menu Konteks untuk Pengelola Pengaya"],
+                       [title*="Приручни мени у управљачу додацима"])
+ #extensionDetailsBox .sectionTitle:not([hidden]) + .boxIndent {
   -moz-appearance: textfield-multiline !important;
   padding: .5em 1em !important;
   margin: 0 18px !important;
 }
-#genericAbout[title*="Приручни мени у управљачу додацима"] #extensionDetailsBox .boxIndent,
-#genericAbout[title*="Menu Konteks untuk Pengelola Pengaya"] #extensionDetailsBox .boxIndent,
-#genericAbout[title*="Add-ons Manager Context Menu"] #extensionDetailsBox .boxIndent {
+
+#genericAbout:-moz-any([title*="Add-ons Manager Context Menu"],
+                       [title*="Menu Konteks untuk Pengelola Pengaya"],
+                       [title*="Приручни мени у управљачу додацима"])
+ #extensionDetailsBox .boxIndent {
   color: -moz-fieldtext !important;
-}
-#genericAbout[title*="Приручни мени у управљачу додацима"] .text-link,
-#genericAbout[title*="Menu Konteks untuk Pengelola Pengaya"] .text-link,
-#genericAbout[title*="Add-ons Manager Context Menu"] .text-link {
-  color: -moz-hyperlinktext !important;
 }
