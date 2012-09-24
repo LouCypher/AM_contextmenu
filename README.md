@@ -1,6 +1,7 @@
-## Screenshot
+## Screenshots
 
-[![Screenshot](https://lh5.googleusercontent.com/-NlwZbuDj8x4/UA777oswPlI/AAAAAAAACxE/vl-Ciz_Atx4/s128/amcontext.png)](https://lh5.googleusercontent.com/-NlwZbuDj8x4/UA777oswPlI/AAAAAAAACxE/vl-Ciz_Atx4/s800/amcontext.png "Click to enlarge")
+[![Extensions](https://lh5.googleusercontent.com/-NlwZbuDj8x4/UA777oswPlI/AAAAAAAACxE/vl-Ciz_Atx4/s128/amcontext.png)](https://lh5.googleusercontent.com/-NlwZbuDj8x4/UA777oswPlI/AAAAAAAACxE/vl-Ciz_Atx4/s800/amcontext.png "Click to enlarge")
+[![Userscripts](https://lh3.googleusercontent.com/-dveDiA_Xud0/UF9jBUa2bjI/AAAAAAAAC0A/mu6ZM1tbgok/s128/amcontext-userscripts.png)](https://lh3.googleusercontent.com/-dveDiA_Xud0/UF9jBUa2bjI/AAAAAAAAC0A/mu6ZM1tbgok/s800/amcontext-userscripts.png "Click to enlarge")
 
 ## Compatibility
 
