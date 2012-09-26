@@ -1,5 +1,5 @@
-<!ENTITY AMcontext.inspectAddon "アドオンの調査">
-<!ENTITY AMcontext.inspectUserscript "Inspect User Script">
+<!ENTITY AMcontext.inspectAddon "アドオンを調査">
+<!ENTITY AMcontext.inspectUserscript "ユーザースクリプトを調査">
 <!ENTITY AMcontext.browseDir "インストールディレクトリを開く">
 <!ENTITY AMcontext.copyName "アドオン名をコピー">
 <!ENTITY AMcontext.copyVersion "アドオンバージョンをコピー">
@@ -9,7 +9,7 @@
 <!ENTITY AMcontext.releaseNotes "リリースノートを開く">
 <!ENTITY AMcontext.visitHomePage "ホームページを開く">
 <!ENTITY AMcontext.visitAMOPage "Mozilla Add-ons のページを開く">
-<!ENTITY AMcontext.visitUSOPage "View on Userscripts.org">
-<!ENTITY AMcontext.findOnUSO "Find on Userscripts.org">
+<!ENTITY AMcontext.visitUSOPage "Userscripts.org のページを開く">
+<!ENTITY AMcontext.findOnUSO "Userscripts.org を検索">
 <!ENTITY AMcontext.visitSupport "アドオンのサポートページを開く">
 <!ENTITY AMcontext.reviews "アドオンのレビューページを開く">

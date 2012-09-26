@@ -1,5 +1,5 @@
-<!ENTITY AMcontext.inspectAddon "检查附加组件">
-<!ENTITY AMcontext.inspectUserscript "Inspect User Script">
+<!ENTITY AMcontext.inspectAddon "查看附加组件">
+<!ENTITY AMcontext.inspectUserscript "查看用户脚本">
 <!ENTITY AMcontext.browseDir "查看安装目录">
 <!ENTITY AMcontext.copyName "复制附加组件名称">
 <!ENTITY AMcontext.copyVersion "复制附加组件版本">
@@ -9,7 +9,7 @@
 <!ENTITY AMcontext.releaseNotes "发行说明">
 <!ENTITY AMcontext.visitHomePage "访问主页">
 <!ENTITY AMcontext.visitAMOPage "访问 Mozilla 附加组件页">
-<!ENTITY AMcontext.visitUSOPage "View on Userscripts.org">
-<!ENTITY AMcontext.findOnUSO "Find on Userscripts.org">
+<!ENTITY AMcontext.visitUSOPage "在 Userscripts.org 上查看">
+<!ENTITY AMcontext.findOnUSO "在 Userscripts.org 上查找">
 <!ENTITY AMcontext.visitSupport "访问附加组件支持页">
 <!ENTITY AMcontext.reviews "附加组件评论">

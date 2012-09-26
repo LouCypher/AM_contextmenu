@@ -6,7 +6,7 @@
     <em:type>2</em:type>
     <!--em:unpack>true</em:unpack-->
     <em:name>Add-ons Manager Context Menu</em:name>
-    <em:version>0.4a20120924</em:version>
+    <em:version>0.4a20120926</em:version>
     <em:description>Add more items to Add-ons Manager context menu.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>

@@ -1,5 +1,5 @@
 <!ENTITY AMcontext.inspectAddon "Испитај додатак">
-<!ENTITY AMcontext.inspectUserscript "Inspect User Script">
+<!ENTITY AMcontext.inspectUserscript "Испитај корисничку скрипту">
 <!ENTITY AMcontext.browseDir "Погледај директоријум инсталације">
 <!ENTITY AMcontext.copyName "Копирај назив додатка">
 <!ENTITY AMcontext.copyVersion "Копирај верзију додатка">
@@ -9,7 +9,7 @@
 <!ENTITY AMcontext.releaseNotes "Белешка о издању">
 <!ENTITY AMcontext.visitHomePage "Посети матичну страницу">
 <!ENTITY AMcontext.visitAMOPage "Посети Мозилину страницу са додацима">
-<!ENTITY AMcontext.visitUSOPage "View on Userscripts.org">
-<!ENTITY AMcontext.findOnUSO "Find on Userscripts.org">
+<!ENTITY AMcontext.visitUSOPage "Погледај на userscripts.org">
+<!ENTITY AMcontext.findOnUSO "Потражи на userscripts.org">
 <!ENTITY AMcontext.visitSupport "Посети подршку за додатак">
 <!ENTITY AMcontext.reviews "Оцене додатка">
