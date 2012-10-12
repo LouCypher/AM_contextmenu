@@ -236,6 +236,10 @@ var AM_Context = {
     inspectItem.disabled = !("inspectObject" in window);
     inspectItem.className = isUserScript ? "greasemonkey" : "";
 
+    var inspectScript = AM_context_Item("inspect-userscript")
+    inspectScript.disabled = !("inspectObject" in window);
+    inspectScript.hidden = !isUserScript;
+
     var separator = AM_context_Item("menuseparator-2");
     separator.className = isUserScript ? "greasemonkey" : "";
     separator.hidden = isUserStyle;
