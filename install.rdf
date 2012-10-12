@@ -6,7 +6,7 @@
     <em:type>2</em:type>
     <!--em:unpack>true</em:unpack-->
     <em:name>Add-ons Manager Context Menu</em:name>
-    <em:version>0.4a20120926</em:version>
+    <em:version>0.4a2012101301</em:version>
     <em:description>Add more items to Add-ons Manager context menu.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
@@ -16,6 +16,19 @@
         <em:locale>en-US</em:locale>
         <em:name>Add-ons Manager Context Menu</em:name>
         <em:description>Add more items to Add-ons Manager context menu.</em:description>
+        <em:translator>Scooter (es-ES)</em:translator>
+        <em:translator>Haebaru (ja)</em:translator>
+        <em:translator>ДакСРБИЈА (sr)</em:translator>
+        <em:translator>Wang.H.K (zh-CN)</em:translator>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+        <em:locale>es-ES</em:locale>
+        <em:name>Menú contextual del administrador de complementos</em:name>
+        <em:description>Agregar entradas al menú contextual del administrador de complementos</em:description>
+        <em:translator>Scooter (es-ES)</em:translator>
         <em:translator>Haebaru (ja)</em:translator>
         <em:translator>ДакСРБИЈА (sr)</em:translator>
         <em:translator>Wang.H.K (zh-CN)</em:translator>
@@ -27,6 +40,7 @@
         <em:locale>id</em:locale>
         <em:name>Menu Konteks untuk Pengelola Pengaya</em:name>
         <em:description>Menambahkan lebih banyak menuitem pada menu konteks di Pengelola Pengaya.</em:description>
+        <em:translator>Scooter (es-ES)</em:translator>
         <em:translator>Haebaru (ja)</em:translator>
         <em:translator>ДакСРБИЈА (sr)</em:translator>
         <em:translator>Wang.H.K (zh-CN)</em:translator>
@@ -38,6 +52,7 @@
         <em:locale>ja</em:locale>
         <em:name>Add-ons Manager Context Menu</em:name>
         <em:description>アドオンマネージャのコンテキストメニューに項目を追加します。</em:description>
+        <em:translator>Scooter (es-ES)</em:translator>
         <em:translator>Haebaru (ja)</em:translator>
         <em:translator>ДакСРБИЈА (sr)</em:translator>
         <em:translator>Wang.H.K (zh-CN)</em:translator>
@@ -49,6 +64,7 @@
         <em:locale>sr</em:locale>
         <em:name>Приручни мени у управљачу додацима</em:name>
         <em:description>Додајте више ставки у приручни мени управљача додацима</em:description>
+        <em:translator>Scooter (es-ES)</em:translator>
         <em:translator>Haebaru (ja)</em:translator>
         <em:translator>ДакСРБИЈА (sr)</em:translator>
         <em:translator>Wang.H.K (zh-CN)</em:translator>
@@ -60,6 +76,7 @@
         <em:locale>zh-CN</em:locale>
         <em:name>Add-ons Manager Context Menu</em:name>
         <em:description>为附加组件管理器上下文菜单添加更多项目。</em:description>
+        <em:translator>Scooter (es-ES)</em:translator>
         <em:translator>Haebaru (ja)</em:translator>
         <em:translator>ДакСРБИЈА (sr)</em:translator>
         <em:translator>Wang.H.K (zh-CN)</em:translator>
