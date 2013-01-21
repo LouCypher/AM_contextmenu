@@ -141,7 +141,9 @@ var AM_Context = {
     var isTheme = (addonType == "theme");
     var isPlugin = (addonType == "plugin");
     var isUserStyle = (addonType == "userstyle");
-    var isUserScript = (addonType == "user-script");
+    var isUserScript = (addonType == "user-script") || // Greasemonkey
+                       (addonType == "userscript") ||  // Scriptish
+                       (addonType == "greasemonkey-user-script"); // Greasemonkey 1.7+
 
     var copyNameItem = AM_context_Item("copy-name");
     copyNameItem.tooltipText = aAddon.name;
