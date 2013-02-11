@@ -144,22 +144,23 @@ var AM_Context = {
     var isUserScript = (addonType == "user-script") || // Greasemonkey
                        (addonType == "userscript") ||  // Scriptish
                        (addonType == "greasemonkey-user-script"); // Greasemonkey 1.7+
+    var isCustomButton = (addonType == "custombuttons");
 
     var copyNameItem = AM_context_Item("copy-name");
     copyNameItem.tooltipText = aAddon.name;
-    copyNameItem.disabled = isUserStyle;
+    copyNameItem.disabled = isUserStyle || isCustomButton;
 
     var copyVersionItem = AM_context_Item("copy-version");
     copyVersionItem.tooltipText = aAddon.version;
-    copyVersionItem.disabled = isUserStyle;
+    copyVersionItem.disabled = isUserStyle || isCustomButton;
 
     var copyNameVersionItem = AM_context_Item("copy-nameversion");
     copyNameVersionItem.tooltipText = aAddon.name + " " + aAddon.version;
-    copyNameVersionItem.disabled = isUserStyle;
+    copyNameVersionItem.disabled = isUserStyle || isCustomButton;
 
     var copyIdItem = AM_context_Item("copy-id");
     copyIdItem.tooltipText = aAddon.id;
-    copyIdItem.disabled = isUserStyle;
+    copyIdItem.disabled = isUserStyle || isCustomButton;
 
     var amoURL = aAddon.reviewURL
                  ? aAddon.reviewURL.replace(/\/reviews\//, "/")
@@ -230,9 +231,10 @@ var AM_Context = {
                                                  [aAddon.contributionAmount],
                                                  1);
 
-    AM_context_Item("browse-dir").disabled =
-      isPlugin || isUserStyle || (isTheme && aAddon.iconURL &&
-                                  /^https?/.test(aAddon.iconURL));
+    AM_context_Item("browse-dir").disabled = isPlugin || isUserStyle
+                                          || (isTheme && aAddon.iconURL &&
+                                              /^https?/.test(aAddon.iconURL))
+                                          || isCustomButton;
 
     var inspectItem = AM_context_Item("inspect-addon");
     inspectItem.disabled = !("inspectObject" in window);
@@ -244,7 +246,7 @@ var AM_Context = {
 
     var separator = AM_context_Item("menuseparator-2");
     separator.className = isUserScript ? "greasemonkey" : "";
-    separator.hidden = isUserStyle;
+    separator.hidden = isUserStyle || isCustomButton;
   },
 
   initPopup: function AM_context_initPopup(aEvent) {
