@@ -141,6 +141,7 @@ var AM_Context = {
     var isTheme = (addonType == "theme");
     var isPlugin = (addonType == "plugin");
     var isUserStyle = (addonType == "userstyle");
+    var isScriptish = (addonType == "userscript");
     var isUserScript = (addonType == "user-script") || // Greasemonkey
                        (addonType == "userscript") ||  // Scriptish
                        (addonType == "greasemonkey-user-script"); // Greasemonkey 1.7+
@@ -231,14 +232,20 @@ var AM_Context = {
                                                  [aAddon.contributionAmount],
                                                  1);
 
-    AM_context_Item("browse-dir").disabled = isPlugin || isUserStyle
+    AM_context_Item("browse-dir").disabled = isPlugin
+                                          || isUserStyle
+                                          || isUserScript
                                           || (isTheme && aAddon.iconURL &&
                                               /^https?/.test(aAddon.iconURL))
                                           || isCustomButton;
 
     var inspectItem = AM_context_Item("inspect-addon");
     inspectItem.disabled = !("inspectObject" in window);
-    inspectItem.className = isUserScript ? "greasemonkey" : "";
+    inspectItem.className = isUserScript
+                            ? isScriptish
+                              ? ""
+                              : "greasemonkey"
+                            : "";
 
     var inspectScript = AM_context_Item("inspect-userscript")
     inspectScript.disabled = !("inspectObject" in window);
