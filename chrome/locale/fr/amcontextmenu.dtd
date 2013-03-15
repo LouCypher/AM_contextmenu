@@ -1,0 +1,15 @@
+<!ENTITY AMcontext.inspectAddon "Examiner le module complémentaire">
+<!ENTITY AMcontext.inspectUserscript "Examiner le script utilisateur">
+<!ENTITY AMcontext.browseDir "Parcourir le dossier d'installation">
+<!ENTITY AMcontext.copyName "Copier le nom du module complémentaire">
+<!ENTITY AMcontext.copyVersion "Copier la version du module complémentaire">
+<!ENTITY AMcontext.copyNameVersion "Copier le nom et la version du module complémentaire">
+<!ENTITY AMcontext.copyId "Copier l'identifiant du module supplémentaire">
+<!ENTITY AMcontext.copyHomePageURL "Copier l'URL de la page d'accueil">
+<!ENTITY AMcontext.releaseNotes "Notes de version">
+<!ENTITY AMcontext.visitHomePage "Se rendre sur la page d'accueil">
+<!ENTITY AMcontext.visitAMOPage "Consulter la page des modules complémentaires de Mozilla">
+<!ENTITY AMcontext.visitUSOPage "Aller sur Userscripts.org">
+<!ENTITY AMcontext.findOnUSO "Rechercher sur Userscripts.org">
+<!ENTITY AMcontext.visitSupport "Consulter l'aide du module complémentaire">
+<!ENTITY AMcontext.reviews "Commentaires sur le module complémentaire">

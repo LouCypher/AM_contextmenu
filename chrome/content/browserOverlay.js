@@ -19,7 +19,11 @@
       req.onreadystatechange = function (aEvent) {
         if ((req.readyState == 4) && (req.status == 200)) {
           prefs.setBoolPref("firstRun", false);
-          switchToTabHavingURI(url, true);
+          if (Application.id == "{3550f703-e582-4d05-9a08-453d09bdfdc6}") {
+            openContentTab(url, "tab", "^https?:");
+          } else {
+            switchToTabHavingURI(url, true);
+          }
         }
       }
       req.send(null);

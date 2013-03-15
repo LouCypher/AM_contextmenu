@@ -1,0 +1,15 @@
+<!ENTITY AMcontext.inspectAddon "בחן תוסף">
+<!ENTITY AMcontext.inspectUserscript "בחן סקריפט של משתמש">
+<!ENTITY AMcontext.browseDir "פתח תקיית התקנה">
+<!ENTITY AMcontext.copyName "העתק שם תוסף">
+<!ENTITY AMcontext.copyVersion "העתק גרסת תוסף">
+<!ENTITY AMcontext.copyNameVersion "העתק שם וגרסה של תוסף">
+<!ENTITY AMcontext.copyId "העתק מזהה תוסף">
+<!ENTITY AMcontext.copyHomePageURL "העתק כתובת דף בית">
+<!ENTITY AMcontext.releaseNotes "הערות שחרור">
+<!ENTITY AMcontext.visitHomePage "בקר בדף הבית">
+<!ENTITY AMcontext.visitAMOPage "בקר בדף התוספים של מוזילה">
+<!ENTITY AMcontext.visitUSOPage "צפה ב-Userscripts.org">
+<!ENTITY AMcontext.findOnUSO "מצא ב-Userscripts.org">
+<!ENTITY AMcontext.visitSupport "בקר בתמיכה לתוסף">
+<!ENTITY AMcontext.reviews "ביקורות על התוסף">
