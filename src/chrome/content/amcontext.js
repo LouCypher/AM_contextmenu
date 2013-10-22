@@ -9,18 +9,16 @@ var AM_Context = {
   toString: function AM_context_name() {
     "use strict";
     try {
-      return Services.prefs.
-             getComplexValue("extensions.amcontextmenu@loucypher.name",
-                             Ci.nsIPrefLocalizedString).data;
+      return Services.prefs.getComplexValue("extensions.amcontextmenu@loucypher.name",
+                                            Ci.nsIPrefLocalizedString).data;
     } catch(ex) {
       return "Add-ons Manager Context Menu";
     }
   },
 
   getPopupNode: function AM_context_getPopupNode(aNode) {
-    return "triggerNode" in aNode.parentNode
-            ? aNode.parentNode.triggerNode
-            : document.popupNode;
+    return "triggerNode" in aNode.parentNode ? aNode.parentNode.triggerNode
+                                             : document.popupNode;
   },
 
   getAddon: function AM_context_addonsManager(aId, aCallback, aEvent) {
@@ -40,8 +38,8 @@ var AM_Context = {
   },
 
   copyToClipboard: function AM_context_copyToClipboard(aString) {
-    Cc["@mozilla.org/widget/clipboardhelper;1"].
-    getService(Ci.nsIClipboardHelper).copyString(aString);
+    Cc["@mozilla.org/widget/clipboardhelper;1"].getService(Ci.nsIClipboardHelper)
+                                               .copyString(aString);
   },
 
   copyName: function AM_context_copyName(aAddon) {
@@ -72,8 +70,7 @@ var AM_Context = {
     //Application.console.log(fileOrDir);
     var gecko = parseInt(Services.appinfo.platformVersion);
     var nsLocalFile = Components.Constructor("@mozilla.org/file/local;1",
-                                             (gecko >= 14) ? "nsIFile"
-                                                           : "nsILocalFile",
+                                             (gecko >= 14) ? "nsIFile" : "nsILocalFile",
                                              "initWithPath");
     try {
       (new nsLocalFile(fileOrDir)).reveal();
@@ -84,7 +81,7 @@ var AM_Context = {
           addonDir.launch();
         }
       } catch(ex) {
-        var uri = Services.io.newFileURI(addonDir);
+        var uri = Services.io.newFileURI(addonDir, null, null);
         var protSvc = Cc["@mozilla.org/uriloader/external-protocol-service;1"].
                       getService(Ci.nsIExternalProtocolService);
         protSvc.loadUrl(uri);
@@ -198,25 +195,15 @@ var AM_Context = {
 
     var usoItem = AM_context_Item("go-uso");
     usoItem.disabled = !usoRegx.test(usoURL);
-    usoItem.className = isUserScript
-                        ? usoItem.disabled
-                          ? ""
-                          : "greasemonkey"
-                        : "";
-    usoItem.tooltipText = usoURL.replace(/source/, "show")
-                                .replace(/.\w+.js$/, "");
+    usoItem.className = isUserScript ? usoItem.disabled ? "" : "greasemonkey" : "";
+    usoItem.tooltipText = usoURL.replace(/source/, "show") .replace(/.\w+.js$/, "");
 
-    var fusoItem = AM_context_Item("find-uso");
-    fusoItem.hidden = true;
-    fusoItem.disabled = usoRegx.test(usoURL);
-    fusoItem.className = isUserScript
-                         ? fusoItem.disabled
-                           ? ""
-                           : "greasemonkey"
-                         : "";
-    fusoItem.setAttribute("find-on-uso",
-                          "http://userscripts.org/scripts/search?q=" +
-                          encodeURIComponent(aAddon.name));
+    var fUsoItem = AM_context_Item("find-uso");
+    fUsoItem.hidden = true;
+    fUsoItem.disabled = usoRegx.test(usoURL);
+    fUsoItem.className = isUserScript ? fUsoItem.disabled ? "" : "greasemonkey" : "";
+    fUsoItem.setAttribute("find-on-uso", "http://userscripts.org/scripts/search?q=" +
+                                         encodeURIComponent(aAddon.name));
 
     var supportItem = AM_context_Item("go-support");
     supportItem.disabled = !aAddon.supportURL;
@@ -227,25 +214,16 @@ var AM_Context = {
 
     var donateItem = AM_context_Item("donate");
     donateItem.disabled = !aAddon.contributionURL;
-    donateItem.tooltipText =
-               gStrings.ext.formatStringFromName("contributionAmount2",
-                                                 [aAddon.contributionAmount],
-                                                 1);
+    donateItem.tooltipText = gStrings.ext.formatStringFromName
+                             ("contributionAmount2", [aAddon.contributionAmount], 1);
 
-    AM_context_Item("browse-dir").disabled = isPlugin
-                                          || isUserStyle
-                                          || isUserScript
-                                          || (isTheme && aAddon.iconURL &&
-                                              /^https?/.test(aAddon.iconURL))
-                                          || isCustomButton;
+    AM_context_Item("browse-dir").disabled = isPlugin || isUserStyle || isUserScript ||
+                                             (isTheme && aAddon.iconURL &&
+                                              /^https?/.test(aAddon.iconURL)) || isCustomButton;
 
     var inspectItem = AM_context_Item("inspect-addon");
     inspectItem.disabled = !("inspectObject" in window);
-    inspectItem.className = isUserScript
-                            ? isScriptish
-                              ? ""
-                              : "greasemonkey"
-                            : "";
+    inspectItem.className = isUserScript ? isScriptish ? "" : "greasemonkey" : "";
 
     var inspectScript = AM_context_Item("inspect-userscript")
     inspectScript.disabled = !("inspectObject" in window);
@@ -257,9 +235,7 @@ var AM_Context = {
   },
 
   initPopup: function AM_context_initPopup(aEvent) {
-    AM_Context.getAddon(document.popupNode.value,
-                        AM_Context.setItemsAttributes,
-                        aEvent);
+    AM_Context.getAddon(AM_Context.getPopupNode.value, AM_Context.setItemsAttributes, aEvent);
   },
 
   onLoad: function AM_context_onLoad() {
