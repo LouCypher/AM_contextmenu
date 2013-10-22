@@ -3,22 +3,22 @@
     This Source Code Form is subject to the terms of the Mozilla Public
     License, v. 2.0. If a copy of the MPL was not distributed with this
     file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+    Contributor(s):
+    - LouCypher (original code)
 -->
 
 <!DOCTYPE overlay [
-<!ENTITY % addonsDTD SYSTEM "../locale/">
-%addonsDTD;
-<!ENTITY % extensionsDTD SYSTEM
- "chrome://mozapps/locale/extensions/extensions.dtd">
-%extensionsDTD;
+<!ENTITY % addonsDTD SYSTEM "../locale/"> %addonsDTD;
+<!ENTITY % extensionsDTD SYSTEM 
+ "chrome://mozapps/locale/extensions/extensions.dtd"> %extensionsDTD;
 ]>
 
 <overlay id="addonsManager-overlay"
       xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
   <script type="application/x-javascript" src="amcontext.js"/>
-  <script type="application/javascript"
-          src="chrome://inspector/content/hooks.js"/>
+  <script type="application/javascript" src="chrome://inspector/content/hooks.js"/>
 
   <menupopup id="addonitem-popup">
     <menuseparator id="AM-context-menuseparator-1"
@@ -103,7 +103,7 @@
       insertafter="AM-context-go-home"
       label="&AMcontext.visitAMOPage;"
       oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
- AM_Context.goAMO);"/>
+ AM_Context.gotoAMO);"/>
 
     <menuitem
       id="AM-context-go-support"
@@ -124,6 +124,13 @@
       insertafter="AM-context-reviews"
       label="&cmd.contribute.label;"
       command="cmd_contribute"/>
+
+    <!--<menuitem
+      id="AM-context-download"
+      insertbefore="menuitem_findUpdates"
+      label="Download File"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.saveSource);"/>-->
 
     <menuitem
       id="AM-context-go-uso"

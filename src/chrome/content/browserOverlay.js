@@ -3,11 +3,7 @@
     var prefs = Services.prefs.getBranch("extensions.amcontextmenu.");
 
     // Get and return contribution URL from pref
-    var url = Services.urlFormatter
-                      .formatURL(prefs.getCharPref("contributionURL"));
-    if (!/(firefox|seamonkey|thunderbird)\/addon/.test(url)) {
-      url = url.replace(/\w+\/addon/, "firefox/addon");
-    }
+    var url = Services.urlFormatter.formatURL(prefs.getCharPref("contributionURL"));
 
     // Load donation page on first installation only
     // Check connection first

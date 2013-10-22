@@ -6,7 +6,7 @@
     <em:type>2</em:type>
     <!--em:unpack>true</em:unpack-->
     <em:name>Add-ons Manager Context Menu</em:name>
-    <em:version>0.4</em:version>
+    <em:version>0.5a1</em:version>
     <em:description>Add more items to Add-ons Manager context menu.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
@@ -35,13 +35,7 @@
         <em:description>Agregar entradas al menú contextual del administrador de complementos</em:description>
         <em:creator>LouCypher</em:creator>
         <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
-        <em:translator>Scooter - Español (de España)</em:translator>
-        <em:translator>Eva - Français</em:translator>
-        <em:translator>JNF:) - עברית</em:translator>
-        <em:translator>WJS Purwadarminta - Bahasa Indonesia</em:translator>
-        <em:translator>Haebaru - 日本語</em:translator>
-        <em:translator>ДакСРБИЈА - Српски</em:translator>
-        <em:translator>Wang.H.K - 中文 (简体)</em:translator>
+        <em:translator>Scooter</em:translator>
       </Description>
     </em:localized>
 
@@ -52,13 +46,7 @@
         <em:description>Ajouter d'autres éléments au menu contextuel du gestionnaire de modules complémentaires.</em:description>
         <em:creator>LouCypher</em:creator>
         <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
-        <em:translator>Scooter - Español (de España)</em:translator>
-        <em:translator>Eva - Français</em:translator>
-        <em:translator>JNF:) - עברית</em:translator>
-        <em:translator>WJS Purwadarminta - Bahasa Indonesia</em:translator>
-        <em:translator>Haebaru - 日本語</em:translator>
-        <em:translator>ДакСРБИЈА - Српски</em:translator>
-        <em:translator>Wang.H.K - 中文 (简体)</em:translator>
+        <em:translator>Eva</em:translator>
       </Description>
     </em:localized>
 
@@ -69,13 +57,7 @@
         <em:description>הוסף פריטים לתפריט ההקשר של מנהל התוספים.</em:description>
         <em:creator>LouCypher</em:creator>
         <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
-        <em:translator>Scooter - Español (de España)</em:translator>
-        <em:translator>Eva - Français</em:translator>
-        <em:translator>JNF:) - עברית</em:translator>
-        <em:translator>WJS Purwadarminta - Bahasa Indonesia</em:translator>
-        <em:translator>Haebaru - 日本語</em:translator>
-        <em:translator>ДакСРБИЈА - Српски</em:translator>
-        <em:translator>Wang.H.K - 中文 (简体)</em:translator>
+        <em:translator>JNF:)</em:translator>
       </Description>
     </em:localized>
 
@@ -86,13 +68,7 @@
         <em:description>Menambahkan lebih banyak menuitem pada menu konteks di Pengelola Pengaya.</em:description>
         <em:creator>LouCypher</em:creator>
         <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
-        <em:translator>Scooter - Español (de España)</em:translator>
-        <em:translator>Eva - Français</em:translator>
-        <em:translator>JNF:) - עברית</em:translator>
-        <em:translator>WJS Purwadarminta - Bahasa Indonesia</em:translator>
-        <em:translator>Haebaru - 日本語</em:translator>
-        <em:translator>ДакСРБИЈА - Српски</em:translator>
-        <em:translator>Wang.H.K - 中文 (简体)</em:translator>
+        <em:translator>WJS Purwadarminta</em:translator>
       </Description>
     </em:localized>
 
@@ -103,14 +79,7 @@
         <em:description>アドオンマネージャのコンテキストメニューに項目を追加します。</em:description>
         <em:creator>LouCypher</em:creator>
         <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
-        <em:translator>WJS Purwadarminta - Bahasa Indonesia</em:translator>
-        <em:translator>Scooter - Español (de España)</em:translator>
-        <em:translator>Eva - Français</em:translator>
-        <em:translator>JNF:) - עברית</em:translator>
-        <em:translator>WJS Purwadarminta - Bahasa Indonesia</em:translator>
-        <em:translator>Haebaru - 日本語</em:translator>
-        <em:translator>ДакСРБИЈА - Српски</em:translator>
-        <em:translator>Wang.H.K - 中文 (简体)</em:translator>
+        <em:translator>Haebaru</em:translator>
       </Description>
     </em:localized>
 
@@ -121,13 +90,7 @@
         <em:description>Додајте више ставки у приручни мени управљача додацима</em:description>
         <em:creator>LouCypher</em:creator>
         <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
-        <em:translator>Scooter - Español (de España)</em:translator>
-        <em:translator>Eva - Français</em:translator>
-        <em:translator>JNF:) - עברית</em:translator>
-        <em:translator>WJS Purwadarminta - Bahasa Indonesia</em:translator>
-        <em:translator>Haebaru - 日本語</em:translator>
-        <em:translator>ДакСРБИЈА - Српски</em:translator>
-        <em:translator>Wang.H.K - 中文 (简体)</em:translator>
+        <em:translator>ДакСРБИЈА</em:translator>
       </Description>
     </em:localized>
 
@@ -138,13 +101,7 @@
         <em:description>为附加组件管理器上下文菜单添加更多项目。</em:description>
         <em:creator>LouCypher</em:creator>
         <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
-        <em:translator>Scooter - Español (de España)</em:translator>
-        <em:translator>Eva - Français</em:translator>
-        <em:translator>JNF:) - עברית</em:translator>
-        <em:translator>WJS Purwadarminta - Bahasa Indonesia</em:translator>
-        <em:translator>Haebaru - 日本語</em:translator>
-        <em:translator>ДакСРБИЈА - Српски</em:translator>
-        <em:translator>Wang.H.K - 中文 (简体)</em:translator>
+        <em:translator>Wang.H.K</em:translator>
       </Description>
     </em:localized>
 
