@@ -19,9 +19,13 @@ var AM_Context = {
     }
   },
 
+  log: function AM_context_log(aString) {
+    Services.console.logStringMessage(aString);
+  },
+
   getPopupNode: function AM_context_getPopupNode(aNode) {
-    return "triggerNode" in aNode.parentNode ? aNode.parentNode.triggerNode
-                                             : document.popupNode;
+    //Services.console.logStringMessage(aNode.nodeName);
+    return "triggerNode" in aNode ? aNode.triggerNode : document.popupNode;
   },
 
   getAddon: function AM_context_getAddon(aId, aCallback, aEvent) {
@@ -185,22 +189,26 @@ var AM_Context = {
     itemCopyId.tooltipText = aAddon.id;
     itemCopyId.disabled = isUserStyle || isCustomButton;
 
+    var homepageURL = aAddon.homepageURL
+                      ? /^(http|ftp)s?:/.test(aAddon.homepageURL) ? aAddon.homepageURL : null
+                      : null;
+
     var itemCopyURL = AM_context_Item("copy-url");
     var itemGoHome = AM_context_Item("go-home");
-    if (aAddon.homepageURL) {
-      itemCopyURL.tooltipText = itemGoHome.tooltipText = aAddon.homepageURL;
+    if (homepageURL) {
+      itemCopyURL.tooltipText = itemGoHome.tooltipText = homepageURL;
     } else if (aAddon.reviewURL) {
       itemCopyURL.tooltipText =  itemGoHome.tooltipText = amoURL.match(/[^\?]+/);
     }
     itemCopyURL.disabled = itemGoHome.disabled =
-      !(aAddon.homepageURL || aAddon.reviewURL);
+      !(homepageURL || aAddon.reviewURL);
 
     var itemReleaseNotes = AM_context_Item("release-notes");
     itemReleaseNotes.disabled = !aAddon.releaseNotesURI;
 
     var itemGotoAMO = AM_context_Item("go-amo");
-    itemGotoAMO.disabled = !amoURL || /addons.mozilla.org/.test(aAddon.homepageURL);
-    itemGotoAMO.tooltipText = amoURL.match(/[^\?]+/);
+    itemGotoAMO.disabled = !amoURL || /addons.mozilla.org/.test(homepageURL);
+    itemGotoAMO.tooltipText = amoURL ? amoURL.match(/[^\?]+/) : "";
 
     var usoRegx = /^https?:\/\/userscripts.org\/scripts\/source\/\d+.\w+.js$/;
     var usoURL = "";
@@ -213,18 +221,19 @@ var AM_Context = {
         usoURL = usUpdateURL;
       }
     }
+    //if (isUserScript) AM_Context.log(usoURL);
 
     var itemGotoUSO = AM_context_Item("go-uso");
     itemGotoUSO.disabled = !usoRegx.test(usoURL);
     itemGotoUSO.className = isUserScript ? itemGotoUSO.disabled ? "" : "greasemonkey" : "";
-    itemGotoUSO.tooltipText = usoURL.replace(/source/, "show") .replace(/.\w+.js$/, "");
+    itemGotoUSO.tooltipText = usoURL.replace(/source/, "show").replace(/.\w+.js$/, "");
 
     var itemFindUSO = AM_context_Item("find-uso");
     itemFindUSO.hidden = true;
     itemFindUSO.disabled = usoRegx.test(usoURL);
     itemFindUSO.className = isUserScript ? itemFindUSO.disabled ? "" : "greasemonkey" : "";
     itemFindUSO.setAttribute("find-on-uso", "http://userscripts.org/scripts/search?q=" +
-                                         encodeURIComponent(aAddon.name));
+                                            encodeURIComponent(aAddon.name));
 
     var itemSupport = AM_context_Item("go-support");
     itemSupport.disabled = !aAddon.supportURL;
