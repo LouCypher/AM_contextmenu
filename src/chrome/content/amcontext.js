@@ -23,6 +23,14 @@ var AM_Context = {
     Services.console.logStringMessage(aString);
   },
 
+  makeURI: function AM_context_makeURI(aURL) {
+    try {
+      return Services.io.newURI(aURL, null, null);
+    } catch(ex) {
+      return null;
+    }
+  },
+
   getPopupNode: function AM_context_getPopupNode(aNode) {
     //Services.console.logStringMessage(aNode.nodeName);
     return "triggerNode" in aNode ? aNode.triggerNode : document.popupNode;
@@ -74,7 +82,7 @@ var AM_Context = {
     dir.append("extensions");
     dir.append(aAddon.id);
     var fileOrDir = dir.path + (dir.exists() ? "" : ".xpi");
-    //Application.console.log(fileOrDir);
+    //AM_Context.log(fileOrDir);
     var gecko = parseInt(Services.appinfo.platformVersion);
     var nsLocalFile = Components.Constructor("@mozilla.org/file/local;1",
                                              (gecko >= 14) ? "nsIFile" : "nsILocalFile",
@@ -107,12 +115,8 @@ var AM_Context = {
   goHome: function AM_context_goHome(aAddon) {
     var url = aAddon.homepageURL;
     if (!url) {
-      if (aAddon.reviewURL) {
-        url = aAddon.reviewURL.replace(/\/reviews\/.*$/, "/");
-      } else {
-        url = "https://addons.mozilla.org/search/?q="
-            + encodeURIComponent(aAddon.name);
-      }
+      url = "https://addons.mozilla.org/search/?q="
+          + encodeURIComponent(aAddon.name);
     }
     openURL(url);
   },
@@ -123,14 +127,28 @@ var AM_Context = {
 
   getAmoURL: function AM_context_getAmoURL(aAddon) {
     var sourceTracker = "/?src=external-Add-ons_Manager_Context_Menu-extension";
-    if (aAddon.reviewURL) {
+
+    if (/personas.mozilla.org$/.test(aAddon.id)) {
+      var iconURI = AM_Context.makeURI(aAddon.iconURL);
+      //AM_Context.log(iconURI.host);
+      if (iconURI && (iconURI.host == "addons.mozilla.org" ||
+                      iconURI.host == "getpersonas-cdn.mozilla.net")) {
+        var id = aAddon.id.match(/\d+/).toString();
+        if (iconURI.host == "getpersonas-cdn.mozilla.net") {
+          return "http://getpersonas.com/persona/" + id;
+        } else {
+          return "https://addons.mozilla.org/addon/" + id;
+        }
+      }
+    }
+
+    var reviewURI = AM_Context.makeURI(aAddon.reviewURL);
+    if (reviewURI && reviewURI.host == "addons.mozilla.org") {
       return aAddon.reviewURL.replace(/\/reviews\//, "/")
                              .replace(/\/(firefox|seamonkey|thunderbird|android)/, "")
                              .replace(/\/\?src\=api/, sourceTracker);
     }
-    if (/personas.mozilla.org$/.test(aAddon.id)) {
-      return "https://addons.mozilla.org/addon/" + aAddon.id.match(/\d+/) + sourceTracker;
-    }
+
     return null;
   },
 
@@ -139,7 +157,14 @@ var AM_Context = {
   },
 
   review: function AM_context_review(aAddon) {
-    openURL(aAddon.reviewURL.replace(/\/(firefox|seamonkey|thunderbird|android)/, ""));
+    var reviewURL = aAddon.reviewURL;
+    if (reviewURL) {
+      reviewURL = reviewURL.replace(/\/(firefox|seamonkey|thunderbird|android)/, "");
+    }
+    if (/personas.mozilla.org$/.test(aAddon.id)) {
+      reviewURL = AM_Context.getAmoURL(aAddon) + "/reviews/";
+    }
+    openURL(reviewURL);
   },
 
   support: function AM_context_support(aAddon) {
@@ -158,9 +183,7 @@ var AM_Context = {
       return document.getElementById("AM-context-" + aId);
     }
 
-    var amoURL = AM_Context.getAmoURL(aAddon);
     var addonType = aEvent.target.getAttribute("addontype");
-    //var addonHasSource = aAddon.sourceURI && /^(http|ftp)s?/.test(aAddon.sourceURI.spec);
 
     var isExtension = (addonType == "extension");
     var isTheme = (addonType == "theme");
@@ -172,6 +195,12 @@ var AM_Context = {
                        (addonType == "userscript") ||  // Scriptish
                        (addonType == "greasemonkey-user-script"); // Greasemonkey 1.7+
     var isCustomButton = (addonType == "custombuttons");
+
+    var amoURL = AM_Context.getAmoURL(aAddon);
+    //AM_Context.log(amoURL ? amoURL : "undefined");
+    var reviewURL = isPersonas ? (amoURL + "/reviews/") : aAddon.reviewURL;
+    //AM_Context.log(reviewURL ? reviewURL : "undefined");
+    //var addonHasSource = aAddon.sourceURI && /^(http|ftp)s?/.test(aAddon.sourceURI.spec);
 
     var itemCopyName = AM_context_Item("copy-name");
     itemCopyName.tooltipText = aAddon.name;
@@ -190,24 +219,25 @@ var AM_Context = {
     itemCopyId.disabled = isUserStyle || isCustomButton;
 
     var homepageURL = aAddon.homepageURL
-                      ? /^(http|ftp)s?:/.test(aAddon.homepageURL) ? aAddon.homepageURL : null
+                      ? /^https?:/.test(aAddon.homepageURL)
+                        ? /addons.mozilla.org/.test(aAddon.homepageURL)
+                          ? null
+                          : aAddon.homepageURL
+                        : null
                       : null;
 
     var itemCopyURL = AM_context_Item("copy-url");
     var itemGoHome = AM_context_Item("go-home");
     if (homepageURL) {
       itemCopyURL.tooltipText = itemGoHome.tooltipText = homepageURL;
-    } else if (aAddon.reviewURL) {
-      itemCopyURL.tooltipText =  itemGoHome.tooltipText = amoURL.match(/[^\?]+/);
     }
-    itemCopyURL.disabled = itemGoHome.disabled =
-      !(homepageURL || aAddon.reviewURL);
+    itemCopyURL.disabled = itemGoHome.disabled = !homepageURL;
 
     var itemReleaseNotes = AM_context_Item("release-notes");
     itemReleaseNotes.disabled = !aAddon.releaseNotesURI;
 
     var itemGotoAMO = AM_context_Item("go-amo");
-    itemGotoAMO.disabled = !amoURL || /addons.mozilla.org/.test(homepageURL);
+    itemGotoAMO.disabled = !amoURL;
     itemGotoAMO.tooltipText = amoURL ? amoURL.match(/[^\?]+/) : "";
 
     var usoRegx = /^https?:\/\/userscripts.org\/scripts\/source\/\d+.\w+.js$/;
@@ -240,7 +270,7 @@ var AM_Context = {
     itemSupport.tooltipText = aAddon.supportURL;
 
     var itemReview = AM_context_Item("reviews");
-    itemReview.disabled = !aAddon.reviewURL;
+    itemReview.disabled = !reviewURL;
 
     var itemDonate = AM_context_Item("donate");
     itemDonate.disabled = !aAddon.contributionURL;
