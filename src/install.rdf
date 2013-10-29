@@ -21,8 +21,8 @@
         <em:translator>Scooter - Español (de España)</em:translator>
         <em:translator>Eva - Français</em:translator>
         <em:translator>JNF:) - עברית</em:translator>
-        <em:translator>WJS Purwadarminta - Bahasa Indonesia</em:translator>
         <em:translator>Haebaru - 日本語</em:translator>
+        <em:translator>Hrant Ohanyan - Հայերեն</em:translator>
         <em:translator>ДакСРБИЈА - Српски</em:translator>
         <em:translator>Wang.H.K - 中文 (简体)</em:translator>
       </Description>
@@ -63,12 +63,22 @@
 
     <em:localized>
       <Description>
+        <em:locale>hy-AM</em:locale>
+        <em:name>Add-ons Manager Context Menu</em:name>
+        <em:description>Ավելացնում է լրացուցիչ ընտրանքներ Հավելումների ընտրացանկում:</em:description>
+        <em:creator>LouCypher</em:creator>
+        <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
+        <em:translator>Hrant Ohanyan</em:translator>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
         <em:locale>id</em:locale>
         <em:name>Menu Konteks untuk Pengelola Pengaya</em:name>
         <em:description>Menambahkan lebih banyak menuitem pada menu konteks di Pengelola Pengaya.</em:description>
         <em:creator>LouCypher</em:creator>
         <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
-        <em:translator>WJS Purwadarminta</em:translator>
       </Description>
     </em:localized>
 

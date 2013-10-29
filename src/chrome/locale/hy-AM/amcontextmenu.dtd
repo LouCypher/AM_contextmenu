@@ -1,0 +1,15 @@
+<!ENTITY AMcontext.inspectAddon "Ստուգել Հավելումը">
+<!ENTITY AMcontext.inspectUserscript "Ստուգել Օգտվողի Գրվածքը">
+<!ENTITY AMcontext.browseDir "Բացել թղթապանակը">
+<!ENTITY AMcontext.copyName "Պատճենել Հավելման անունը">
+<!ENTITY AMcontext.copyVersion "Պատճենել Հավելման տարբերակը">
+<!ENTITY AMcontext.copyNameVersion "Պատճենել Հավելման անունը և տարբերակը">
+<!ENTITY AMcontext.copyId "Պատճենել Հավելման ID-ին">
+<!ENTITY AMcontext.copyHomePageURL "Պատճենել կայքի հղումը">
+<!ENTITY AMcontext.releaseNotes "Թողարկման նշումները">
+<!ENTITY AMcontext.visitHomePage "Վեբ կայքը">
+<!ENTITY AMcontext.visitAMOPage "Այցելել Mozilla-ի Հավելումների կայքը">
+<!ENTITY AMcontext.visitUSOPage "Դիտել Userscripts.org-ում">
+<!ENTITY AMcontext.findOnUSO "Գտնել Userscripts.org-ում">
+<!ENTITY AMcontext.visitSupport "Հավելման աջակցությունը">
+<!ENTITY AMcontext.reviews "Կարծիքներ">
