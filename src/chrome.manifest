@@ -7,6 +7,7 @@ locale    amcontextmenu   he          chrome/locale/he/
 locale    amcontextmenu   hy-AM       chrome/locale/hy-AM/
 locale    amcontextmenu   id          chrome/locale/id/
 locale    amcontextmenu   ja          chrome/locale/ja/
+locale    amcontextmenu   pt-BR       chrome/locale/pt-BR/
 locale    amcontextmenu   sr          chrome/locale/sr/
 locale    amcontextmenu   zh-CN       chrome/locale/zh-CN/
 overlay   about:addons                                        chrome://amcontextmenu/content/addonsOverlay.xul

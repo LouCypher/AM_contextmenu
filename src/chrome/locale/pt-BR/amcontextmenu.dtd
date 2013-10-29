@@ -1,0 +1,15 @@
+<!ENTITY AMcontext.inspectAddon "Inspecionar o complemento">
+<!ENTITY AMcontext.inspectUserscript "Inspecionar scripts de usuário">
+<!ENTITY AMcontext.browseDir "Navegar na pasta onde está instalado">
+<!ENTITY AMcontext.copyName "Copiar nome do complemento">
+<!ENTITY AMcontext.copyVersion "Copiar versão do complemento">
+<!ENTITY AMcontext.copyNameVersion "Copiar nome e versão do complemento">
+<!ENTITY AMcontext.copyId "Copiar identificador do complemento">
+<!ENTITY AMcontext.copyHomePageURL "Copiar endereço da página">
+<!ENTITY AMcontext.releaseNotes "Notas de atualização">
+<!ENTITY AMcontext.visitHomePage "Visitar a página do complemento">
+<!ENTITY AMcontext.visitAMOPage "Visitar a página de complementos do Mozilla">
+<!ENTITY AMcontext.visitUSOPage "Ver no Userscripts.org">
+<!ENTITY AMcontext.findOnUSO "Procurar no Userscripts.org">
+<!ENTITY AMcontext.visitSupport "Visitar página de suporte">
+<!ENTITY AMcontext.reviews "Comentários sobre o complemento">
