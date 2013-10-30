@@ -7,7 +7,8 @@
 #genericAbout:-moz-any([title*="Add-ons Manager Context Menu"],
                        [title*="Menu Konteks untuk Pengelola Pengaya"],
                        [title*="Приручни мени у управљачу додацима"],
-                       [title*="Menú contextual del administrador de complementos"]) {
+                       [title*="Menú contextual del administrador de complementos"],
+                       [title*="Menu de Contexto do Gerenciador de Complementos"]) {
   min-height: 300px !important;
   width: 50em !important;
 }
@@ -15,7 +16,8 @@
 #genericAbout:-moz-any([title*="Add-ons Manager Context Menu"],
                        [title*="Menu Konteks untuk Pengelola Pengaya"],
                        [title*="Приручни мени у управљачу додацима"],
-                       [title*="Menú contextual del administrador de complementos"])
+                       [title*="Menú contextual del administrador de complementos"],
+                       [title*="Menu de Contexto do Gerenciador de Complementos"])
  #extensionDetailsBox {
   min-height: 200px !important;
 }
@@ -23,7 +25,8 @@
 #genericAbout:-moz-any([title*="Add-ons Manager Context Menu"],
                        [title*="Menu Konteks untuk Pengelola Pengaya"],
                        [title*="Приручни мени у управљачу додацима"],
-                       [title*="Menú contextual del administrador de complementos"])
+                       [title*="Menú contextual del administrador de complementos"],
+                       [title*="Menu de Contexto do Gerenciador de Complementos"])
  .text-link {
   border-width: 0 !important;
   color: -moz-hyperlinktext !important;
@@ -32,7 +35,8 @@
 #genericAbout:-moz-any([title*="Add-ons Manager Context Menu"],
                        [title*="Menu Konteks untuk Pengelola Pengaya"],
                        [title*="Приручни мени у управљачу додацима"],
-                       [title*="Menú contextual del administrador de complementos"])
+                       [title*="Menú contextual del administrador de complementos"],
+                       [title*="Menu de Contexto do Gerenciador de Complementos"])
  #extensionDetailsBox .sectionTitle:not([hidden]) + .boxIndent {
   -moz-appearance: textfield-multiline !important;
   padding: .5em 1em !important;
@@ -42,7 +46,8 @@
 #genericAbout:-moz-any([title*="Add-ons Manager Context Menu"],
                        [title*="Menu Konteks untuk Pengelola Pengaya"],
                        [title*="Приручни мени у управљачу додацима"],
-                       [title*="Menú contextual del administrador de complementos"])
+                       [title*="Menú contextual del administrador de complementos"],
+                       [title*="Menu de Contexto do Gerenciador de Complementos"])
  #extensionDetailsBox .boxIndent {
   color: -moz-fieldtext !important;
 }
