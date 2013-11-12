@@ -6,10 +6,11 @@
     <em:type>2</em:type>
     <em:unpack>false</em:unpack>
     <em:name>Add-ons Manager Context Menu</em:name>
-    <em:version>0.5a5</em:version>
+    <em:version>0.5a6</em:version>
     <em:description>Add more items to Add-ons Manager context menu.</em:description>
     <em:creator>LouCypher</em:creator>
     <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
+    <em:updateURL>https://github.com/LouCypher/AM_contextmenu/raw/gh-pages/xpi/update.rdf</em:updateURL>
 
     <em:localized>
       <Description>
