@@ -60,18 +60,18 @@ var AM_Context = {
   copyPersonasData: function AM_context_copyPersonasData(aAddon) {
     var id = aAddon.id.replace(/\@personas.mozilla.org/, "");
     var data = Services.prefs.getCharPref("lightweightThemes.usedThemes");
+    var themes = JSON.parse(data);
+    for (var i in themes) {
+      if (themes[i].id == id) {
+        data = JSON.stringify(themes[i]);
+      }
+    }
     try {
       Cu.import("resource:///modules/devtools/Jsbeautify.jsm");
       data = js_beautify(data);
     } catch(ex) {
     }
-    var themes = JSON.parse(data);
-    for (var i in themes) {
-      if (themes[i].id == id) {
-        data = JSON.stringify(themes[i]);
-        AM_Context.copyToClipboard(data);
-      }
-    }
+    AM_Context.copyToClipboard(data);
   },
 
   copyName: function AM_context_copyName(aAddon) {
