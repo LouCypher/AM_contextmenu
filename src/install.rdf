@@ -4,7 +4,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>amcontextmenu@loucypher</em:id>
     <em:type>2</em:type>
-    <em:unpack>true</em:unpack>
+    <em:unpack>false</em:unpack>
     <em:name>Add-ons Manager Context Menu</em:name>
     <em:version>0.5a5</em:version>
     <em:description>Add more items to Add-ons Manager context menu.</em:description>
