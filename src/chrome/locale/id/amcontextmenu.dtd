@@ -1,6 +1,7 @@
 <!ENTITY AMcontext.inspectAddon         "Inspeksi Pengaya">
 <!ENTITY AMcontext.inspectUserscript    "Inspeksi User Script">
 <!ENTITY AMcontext.browseDir            "Buka Direktori Pengaya">
+<!ENTITY AMcontext.copyPersonasData     "Salin Data Tema">
 <!ENTITY AMcontext.copyName             "Salin Nama Pengaya">
 <!ENTITY AMcontext.copyVersion          "Salin Versi Pengaya">
 <!ENTITY AMcontext.copyNameVersion      "Salin Nama &amp; Versi Pengaya">

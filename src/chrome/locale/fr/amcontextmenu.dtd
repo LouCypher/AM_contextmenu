@@ -1,6 +1,7 @@
 <!ENTITY AMcontext.inspectAddon "Examiner le module complémentaire">
 <!ENTITY AMcontext.inspectUserscript "Examiner le script utilisateur">
 <!ENTITY AMcontext.browseDir "Parcourir le dossier d'installation">
+<!ENTITY AMcontext.copyPersonasData     "Copy Theme Data">
 <!ENTITY AMcontext.copyName "Copier le nom du module complémentaire">
 <!ENTITY AMcontext.copyVersion "Copier la version du module complémentaire">
 <!ENTITY AMcontext.copyNameVersion "Copier le nom et la version du module complémentaire">

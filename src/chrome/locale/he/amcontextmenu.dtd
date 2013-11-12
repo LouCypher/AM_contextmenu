@@ -1,6 +1,7 @@
 <!ENTITY AMcontext.inspectAddon "בחן תוסף">
 <!ENTITY AMcontext.inspectUserscript "בחן סקריפט של משתמש">
 <!ENTITY AMcontext.browseDir "פתח תקיית התקנה">
+<!ENTITY AMcontext.copyPersonasData     "Copy Theme Data">
 <!ENTITY AMcontext.copyName "העתק שם תוסף">
 <!ENTITY AMcontext.copyVersion "העתק גרסת תוסף">
 <!ENTITY AMcontext.copyNameVersion "העתק שם וגרסה של תוסף">

@@ -1,6 +1,7 @@
 <!ENTITY AMcontext.inspectAddon "Испитај додатак">
 <!ENTITY AMcontext.inspectUserscript "Испитај корисничку скрипту">
 <!ENTITY AMcontext.browseDir "Погледај директоријум инсталације">
+<!ENTITY AMcontext.copyPersonasData     "Copy Theme Data">
 <!ENTITY AMcontext.copyName "Копирај назив додатка">
 <!ENTITY AMcontext.copyVersion "Копирај верзију додатка">
 <!ENTITY AMcontext.copyNameVersion "Копирај назив и верзију додатка">

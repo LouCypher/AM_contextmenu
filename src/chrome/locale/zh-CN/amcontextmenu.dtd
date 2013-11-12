@@ -1,6 +1,7 @@
 <!ENTITY AMcontext.inspectAddon "查看附加组件">
 <!ENTITY AMcontext.inspectUserscript "查看用户脚本">
 <!ENTITY AMcontext.browseDir "查看安装目录">
+<!ENTITY AMcontext.copyPersonasData     "Copy Theme Data">
 <!ENTITY AMcontext.copyName "复制附加组件名称">
 <!ENTITY AMcontext.copyVersion "复制附加组件版本">
 <!ENTITY AMcontext.copyNameVersion "复制附加组件名称&amp;版本">

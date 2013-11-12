@@ -1,6 +1,7 @@
 <!ENTITY AMcontext.inspectAddon "アドオンを調査">
 <!ENTITY AMcontext.inspectUserscript "ユーザースクリプトを調査">
 <!ENTITY AMcontext.browseDir "インストールディレクトリを開く">
+<!ENTITY AMcontext.copyPersonasData     "Copy Theme Data">
 <!ENTITY AMcontext.copyName "アドオン名をコピー">
 <!ENTITY AMcontext.copyVersion "アドオンバージョンをコピー">
 <!ENTITY AMcontext.copyNameVersion "アドオン名とバージョンをコピー">

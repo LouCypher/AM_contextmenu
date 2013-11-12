@@ -1,6 +1,7 @@
 <!ENTITY AMcontext.inspectAddon "Ստուգել Հավելումը">
 <!ENTITY AMcontext.inspectUserscript "Ստուգել Օգտվողի Գրվածքը">
 <!ENTITY AMcontext.browseDir "Բացել թղթապանակը">
+<!ENTITY AMcontext.copyPersonasData     "Copy Theme Data">
 <!ENTITY AMcontext.copyName "Պատճենել Հավելման անունը">
 <!ENTITY AMcontext.copyVersion "Պատճենել Հավելման տարբերակը">
 <!ENTITY AMcontext.copyNameVersion "Պատճենել Հավելման անունը և տարբերակը">

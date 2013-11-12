@@ -78,8 +78,15 @@
  AM_Context.copyID);"/>
 
     <menuitem
-      id="AM-context-copy-url"
+      id="AM-context-copy-personas-data"
       insertafter="AM-context-copy-id"
+      label="&AMcontext.copyPersonasData;"
+      oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
+ AM_Context.copyPersonasData);"/>
+
+    <menuitem
+      id="AM-context-copy-url"
+      insertafter="AM-context-copy-personas-data"
       label="&AMcontext.copyHomePageURL;"
       oncommand="AM_Context.getAddon(AM_Context.getPopupNode(this).value,
  AM_Context.copyURL);"/>

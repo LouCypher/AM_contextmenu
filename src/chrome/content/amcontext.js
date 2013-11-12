@@ -57,6 +57,19 @@ var AM_Context = {
                                                .copyString(aString);
   },
 
+  copyPersonasData: function AM_context_copyPersonasData(aAddon) {
+    Cu.import("resource:///modules/devtools/Jsbeautify.jsm");
+    var id = aAddon.id.replace(/\@personas.mozilla.org/, "");
+    var data = Services.prefs.getCharPref("lightweightThemes.usedThemes");
+    var themes = JSON.parse(data);
+    for (var i in themes) {
+      if (themes[i].id == id) {
+        data = JSON.stringify(themes[i]);
+        AM_Context.copyToClipboard(js_beautify(data));
+      }
+    }
+  },
+
   copyName: function AM_context_copyName(aAddon) {
     AM_Context.copyToClipboard(aAddon.name);
   },
@@ -156,15 +169,19 @@ var AM_Context = {
     openURL(AM_Context.getAmoURL(aAddon));
   },
 
-  review: function AM_context_review(aAddon) {
+  getReviewURL: function AM_context_getReviewURL(aAddon) {
     var reviewURL = aAddon.reviewURL;
     if (reviewURL) {
-      reviewURL = reviewURL.replace(/\/(firefox|seamonkey|thunderbird|android)/, "");
+      return reviewURL.replace(/\/(firefox|seamonkey|thunderbird|android)/, "");
     }
-    if (/personas.mozilla.org$/.test(aAddon.id)) {
-      reviewURL = AM_Context.getAmoURL(aAddon) + "/reviews/";
+    if (/\d+\@personas.mozilla.org$/.test(aAddon.id)) {
+      return AM_Context.getAmoURL(aAddon) + "/reviews/";
     }
-    openURL(reviewURL);
+    return null;
+  },
+
+  review: function AM_context_review(aAddon) {
+    openURL(AM_Context.getReviewURL(aAddon));
   },
 
   support: function AM_context_support(aAddon) {
@@ -198,9 +215,13 @@ var AM_Context = {
 
     var amoURL = AM_Context.getAmoURL(aAddon);
     //AM_Context.log(amoURL ? amoURL : "undefined");
-    var reviewURL = isPersonas ? (amoURL + "/reviews/") : aAddon.reviewURL;
+    var reviewURL = AM_Context.getReviewURL(aAddon);
     //AM_Context.log(reviewURL ? reviewURL : "undefined");
     //var addonHasSource = aAddon.sourceURI && /^(http|ftp)s?/.test(aAddon.sourceURI.spec);
+
+    var itemCopyPersonas = AM_context_Item("copy-personas-data");
+    itemCopyPersonas.disabled = !isPersonas;
+    //AM_Context.log(isPersonas);
 
     var itemCopyName = AM_context_Item("copy-name");
     itemCopyName.tooltipText = aAddon.name;
@@ -219,11 +240,9 @@ var AM_Context = {
     itemCopyId.disabled = isUserStyle || isCustomButton;
 
     var homepageURL = aAddon.homepageURL
-                      ? /^https?:/.test(aAddon.homepageURL)
-                        ? /addons.mozilla.org/.test(aAddon.homepageURL)
-                          ? null
-                          : aAddon.homepageURL
-                        : null
+                      ? /^https?:\/\/addons.mozilla.org/.test(aAddon.homepageURL)
+                        ? amoURL.match(/[^\?]+/)
+                        : aAddon.homepageURL
                       : null;
 
     var itemCopyURL = AM_context_Item("copy-url");
@@ -237,7 +256,7 @@ var AM_Context = {
     itemReleaseNotes.disabled = !aAddon.releaseNotesURI;
 
     var itemGotoAMO = AM_context_Item("go-amo");
-    itemGotoAMO.disabled = !amoURL;
+    itemGotoAMO.disabled = !amoURL || amoURL.match(homepageURL);
     itemGotoAMO.tooltipText = amoURL ? amoURL.match(/[^\?]+/) : "";
 
     var usoRegx = /^https?:\/\/userscripts.org\/scripts\/source\/\d+.\w+.js$/;
