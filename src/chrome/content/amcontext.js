@@ -229,19 +229,23 @@ var AM_Context = {
 
     var itemCopyName = AM_context_Item("copy-name");
     itemCopyName.tooltipText = aAddon.name;
-    itemCopyName.disabled = isUserStyle || isCustomButton;
+    itemCopyName.className = isUserScript ? isScriptish ? "" : "greasemonkey" : "";
+    //itemCopyName.disabled = isUserStyle || isCustomButton;
 
     var itemCopyVersion = AM_context_Item("copy-version");
     itemCopyVersion.tooltipText = aAddon.version;
+    itemCopyVersion.className = isUserScript ? isScriptish ? "" : "greasemonkey" : "";
     itemCopyVersion.disabled = isUserStyle || isCustomButton;
 
     var itemCopyNameVersion = AM_context_Item("copy-nameversion");
     itemCopyNameVersion.tooltipText = aAddon.name + " " + aAddon.version;
+    itemCopyNameVersion.className = isUserScript ? isScriptish ? "" : "greasemonkey" : "";
     itemCopyNameVersion.disabled = isUserStyle || isCustomButton;
 
     var itemCopyId = AM_context_Item("copy-id");
     itemCopyId.tooltipText = aAddon.id;
-    itemCopyId.disabled = isUserStyle || isCustomButton;
+    itemCopyId.className = isUserScript ? isScriptish ? "" : "greasemonkey" : "";
+    //itemCopyId.disabled = isUserStyle || isCustomButton;
 
     var homepageURL = aAddon.homepageURL
                       ? /^https?:\/\/addons.mozilla.org/.test(aAddon.homepageURL)
@@ -319,7 +323,7 @@ var AM_Context = {
 
     var separator = AM_context_Item("menuseparator-2");
     separator.className = isUserScript ? "greasemonkey" : "";
-    separator.hidden = isUserStyle || isCustomButton;
+    //separator.hidden = isUserStyle || isCustomButton;
   },
 
   initPopup: function AM_context_initPopup(aEvent) {
