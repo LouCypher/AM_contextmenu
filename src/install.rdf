@@ -19,7 +19,7 @@
         <em:description>Add more items to Add-ons Manager context menu.</em:description>
         <em:creator>LouCypher</em:creator>
         <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
-        <em:translator>Scooter - Español (de España)</em:translator>
+        <em:translator>Scooter, strel - Español (de España)</em:translator>
         <em:translator>Eva - Français</em:translator>
         <em:translator>JNF:) - עברית</em:translator>
         <em:translator>Hrant Ohanyan - Հայերեն</em:translator>
@@ -33,11 +33,11 @@
     <em:localized>
       <Description>
         <em:locale>es-ES</em:locale>
-        <em:name>Menú contextual del administrador de complementos</em:name>
-        <em:description>Agregar entradas al menú contextual del administrador de complementos</em:description>
+        <em:name>Add-ons Manager Context Menu</em:name>
+        <em:description>Agrega más entradas al menú contextual del administrador de complementos</em:description>
         <em:creator>LouCypher</em:creator>
         <em:homepageURL>http://loucypher.github.com/AM_contextmenu/</em:homepageURL>
-        <em:translator>Scooter</em:translator>
+        <em:translator>Scooter, strel</em:translator>
       </Description>
     </em:localized>
 

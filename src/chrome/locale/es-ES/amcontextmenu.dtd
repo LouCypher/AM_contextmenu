@@ -1,16 +1,16 @@
 <!ENTITY AMcontext.inspectAddon "Inspeccionar complemento">
-<!ENTITY AMcontext.inspectUserscript "Inspeccionar Script de usuario">
-<!ENTITY AMcontext.browseDir "Elegir carpeta de instalación">
-<!ENTITY AMcontext.copyPersonasData     "Copy Theme Data">
-<!ENTITY AMcontext.copyName "Copiar nombre de complemento">
-<!ENTITY AMcontext.copyVersion "Copiar versión de complemento">
+<!ENTITY AMcontext.inspectUserscript "Inspeccionar script de usuario">
+<!ENTITY AMcontext.browseDir "Examinar carpeta de instalación">
+<!ENTITY AMcontext.copyPersonasData "Copiar datos del tema decorativo">
+<!ENTITY AMcontext.copyName "Copiar nombre del complemento">
+<!ENTITY AMcontext.copyVersion "Copiar versión del complemento">
 <!ENTITY AMcontext.copyNameVersion "Copiar nombre y versión del complemento">
-<!ENTITY AMcontext.copyId "Copiar ID de complemento">
-<!ENTITY AMcontext.copyHomePageURL "Copiar la dirección de la web">
+<!ENTITY AMcontext.copyId "Copiar identificador (ID) del complemento">
+<!ENTITY AMcontext.copyHomePageURL "Copiar dirección de la página del complemento">
 <!ENTITY AMcontext.releaseNotes "Notas de la versión">
-<!ENTITY AMcontext.visitHomePage "Visitar página web">
-<!ENTITY AMcontext.visitAMOPage "Visitar web de complementos de mozilla">
-<!ENTITY AMcontext.visitUSOPage "Ver en Userscripts.org">
-<!ENTITY AMcontext.findOnUSO "Buscar en Userscripts.org">
-<!ENTITY AMcontext.visitSupport "Visitar el soporte del complemento">
-<!ENTITY AMcontext.reviews "Revisiones del complemento">
+<!ENTITY AMcontext.visitHomePage "Visitar página del complemento">
+<!ENTITY AMcontext.visitAMOPage "Ver en la página de complementos de Mozilla">
+<!ENTITY AMcontext.visitUSOPage "Ver en userscripts.org">
+<!ENTITY AMcontext.findOnUSO "Buscar en userscripts.org">
+<!ENTITY AMcontext.visitSupport "Visitar el sitio de soporte del complemento">
+<!ENTITY AMcontext.reviews "Valoraciones del complemento">
